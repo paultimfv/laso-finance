@@ -1,0 +1,1793 @@
+{
+ "built_at": "2026-10-12",
+ "coverage": {
+  "ethereum": "2026-10-12",
+  "arbitrum": "2026-10-12",
+  "optimism": "2026-09-09",
+  "base": "2026-10-12",
+  "polygon": "2026-10-11",
+  "bnb": "2026-10-12",
+  "solana": "2026-10-12"
+ },
+ "totals": {
+  "volume_usd": 31216605.43408711,
+  "deposits": 91762,
+  "senders": 23800
+ },
+ "by_address": [
+  {
+   "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
+   "chain": "ethereum",
+   "flow": "Main EVM deposit (reloadable + account balance)",
+   "volume_usd": 7969925.529116265,
+   "deposits": 19932,
+   "first": "2022-08-05",
+   "last": "2026-10-12"
+  },
+  {
+   "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
+   "chain": "ethereum",
+   "flow": "Account balance (ETH + BNB)",
+   "volume_usd": 4945657.177200126,
+   "deposits": 12963,
+   "first": "2023-11-17",
+   "last": "2026-10-12"
+  },
+  {
+   "address": "3MZVk97x9SeRxbYpc3jhzRfU2fyA3emYutnqfn9kNfYX",
+   "chain": "solana",
+   "flow": "Account balance (Solana) + agent sweeps",
+   "volume_usd": 4754591.367509982,
+   "deposits": 12046,
+   "first": "2024-01-06",
+   "last": "2026-10-12"
+  },
+  {
+   "address": "8P9JiLTZSUZEhaBNPabrqVjKC9brZ87FJhhxNdVNabSq",
+   "chain": "solana",
+   "flow": "USA reloadable (Solana)",
+   "volume_usd": 4626478.208552979,
+   "deposits": 8212,
+   "first": "2024-02-03",
+   "last": "2026-10-12"
+  },
+  {
+   "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
+   "chain": "polygon",
+   "flow": "Main EVM deposit (reloadable + account balance)",
+   "volume_usd": 2141370.5443148324,
+   "deposits": 8535,
+   "first": "2023-05-13",
+   "last": "2026-10-11"
+  },
+  {
+   "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
+   "chain": "arbitrum",
+   "flow": "Main EVM deposit (reloadable + account balance)",
+   "volume_usd": 1158446.37537108,
+   "deposits": 4785,
+   "first": "2023-05-19",
+   "last": "2026-10-12"
+  },
+  {
+   "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
+   "chain": "ethereum",
+   "flow": "Intl reloadable (EVM)",
+   "volume_usd": 1040375.3376309999,
+   "deposits": 4797,
+   "first": "2022-10-19",
+   "last": "2025-12-18"
+  },
+  {
+   "address": "0x76630b66b0cf7858186dc7031ad1e7e29a13168c",
+   "chain": "arbitrum",
+   "flow": "Account balance (Arbitrum) + BTC swap treasury",
+   "volume_usd": 692127.036912102,
+   "deposits": 2215,
+   "first": "2023-12-06",
+   "last": "2026-10-12"
+  },
+  {
+   "address": "Cdhj6FBJjaAbQZXP4RDaq7hCBZdcbundLtq1QiH4H9zc",
+   "chain": "solana",
+   "flow": "Intl reloadable (Solana)",
+   "volume_usd": 690829.1474430008,
+   "deposits": 3565,
+   "first": "2024-07-24",
+   "last": "2026-03-15"
+  },
+  {
+   "address": "0xf2ce71121c32730f7fac85ea7c8bc279a1320030",
+   "chain": "base",
+   "flow": "Account balance (Base)",
+   "volume_usd": 578712.2720129996,
+   "deposits": 1716,
+   "first": "2024-03-22",
+   "last": "2026-10-12"
+  },
+  {
+   "address": "0x8cbc98d51a8fcd83fe366acf96c55ad22e8bb95c",
+   "chain": "polygon",
+   "flow": "Account balance (Polygon)",
+   "volume_usd": 562790.9908705562,
+   "deposits": 2577,
+   "first": "2023-11-28",
+   "last": "2026-10-05"
+  },
+  {
+   "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
+   "chain": "base",
+   "flow": "Main EVM deposit (reloadable + account balance)",
+   "volume_usd": 459227.5404730104,
+   "deposits": 2006,
+   "first": "2024-03-22",
+   "last": "2026-10-12"
+  },
+  {
+   "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
+   "chain": "bnb",
+   "flow": "Account balance (ETH + BNB)",
+   "volume_usd": 429790.30592376913,
+   "deposits": 2487,
+   "first": "2025-01-28",
+   "last": "2026-10-11"
+  },
+  {
+   "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
+   "chain": "bnb",
+   "flow": "Intl reloadable (EVM)",
+   "volume_usd": 337881.8021988324,
+   "deposits": 2078,
+   "first": "2025-02-27",
+   "last": "2025-12-02"
+  },
+  {
+   "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
+   "chain": "polygon",
+   "flow": "Intl reloadable (EVM)",
+   "volume_usd": 275654.86964799993,
+   "deposits": 780,
+   "first": "2023-07-15",
+   "last": "2026-06-25"
+  },
+  {
+   "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
+   "chain": "arbitrum",
+   "flow": "Intl reloadable (EVM)",
+   "volume_usd": 148315.63472499998,
+   "deposits": 614,
+   "first": "2023-05-26",
+   "last": "2025-12-02"
+  },
+  {
+   "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
+   "chain": "bnb",
+   "flow": "Main EVM deposit (reloadable + account balance)",
+   "volume_usd": 135529.4678415473,
+   "deposits": 701,
+   "first": "2023-07-12",
+   "last": "2026-10-12"
+  },
+  {
+   "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
+   "chain": "base",
+   "flow": "Intl reloadable (EVM)",
+   "volume_usd": 109887.979127,
+   "deposits": 763,
+   "first": "2025-02-09",
+   "last": "2026-07-03"
+  },
+  {
+   "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
+   "chain": "optimism",
+   "flow": "Main EVM deposit (reloadable + account balance)",
+   "volume_usd": 93975.21811499516,
+   "deposits": 612,
+   "first": "2023-05-21",
+   "last": "2026-07-29"
+  },
+  {
+   "address": "0x609299443b6cb7d0a9b878baeeaeb8a4ea2e64aa",
+   "chain": "optimism",
+   "flow": "Account balance (Optimism)",
+   "volume_usd": 47484.75377061473,
+   "deposits": 268,
+   "first": "2023-11-30",
+   "last": "2026-09-09"
+  },
+  {
+   "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
+   "chain": "optimism",
+   "flow": "Intl reloadable (EVM)",
+   "volume_usd": 11262.293901999998,
+   "deposits": 66,
+   "first": "2025-03-05",
+   "last": "2025-11-24"
+  },
+  {
+   "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
+   "chain": "arbitrum",
+   "flow": "Account balance (ETH + BNB)",
+   "volume_usd": 3163.574114,
+   "deposits": 16,
+   "first": "2023-12-21",
+   "last": "2024-11-20"
+  },
+  {
+   "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
+   "chain": "polygon",
+   "flow": "Account balance (ETH + BNB)",
+   "volume_usd": 2993.661432564614,
+   "deposits": 21,
+   "first": "2023-12-01",
+   "last": "2025-12-29"
+  },
+  {
+   "address": "0x609299443b6cb7d0a9b878baeeaeb8a4ea2e64aa",
+   "chain": "arbitrum",
+   "flow": "Account balance (Optimism)",
+   "volume_usd": 55.71,
+   "deposits": 1,
+   "first": "2023-12-21",
+   "last": "2023-12-21"
+  },
+  {
+   "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
+   "chain": "optimism",
+   "flow": "Account balance (ETH + BNB)",
+   "volume_usd": 49.63588,
+   "deposits": 3,
+   "first": "2024-01-22",
+   "last": "2025-05-13"
+  },
+  {
+   "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
+   "chain": "base",
+   "flow": "Account balance (ETH + BNB)",
+   "volume_usd": 15.0,
+   "deposits": 2,
+   "first": "2024-08-28",
+   "last": "2026-05-14"
+  },
+  {
+   "address": "0x8cbc98d51a8fcd83fe366acf96c55ad22e8bb95c",
+   "chain": "optimism",
+   "flow": "Account balance (Polygon)",
+   "volume_usd": 14.0,
+   "deposits": 1,
+   "first": "2024-05-18",
+   "last": "2024-05-18"
+  }
+ ],
+ "monthly_by_chain": [
+  {
+   "month": "2022-08-01",
+   "chain": "ethereum",
+   "volume_usd": 846.74
+  },
+  {
+   "month": "2022-09-01",
+   "chain": "ethereum",
+   "volume_usd": 4695.18
+  },
+  {
+   "month": "2022-10-01",
+   "chain": "ethereum",
+   "volume_usd": 8791.54851189
+  },
+  {
+   "month": "2022-11-01",
+   "chain": "ethereum",
+   "volume_usd": 19481.86645714
+  },
+  {
+   "month": "2022-12-01",
+   "chain": "ethereum",
+   "volume_usd": 13132.141161521264
+  },
+  {
+   "month": "2023-01-01",
+   "chain": "ethereum",
+   "volume_usd": 15651.812308
+  },
+  {
+   "month": "2023-02-01",
+   "chain": "ethereum",
+   "volume_usd": 19152.995381
+  },
+  {
+   "month": "2023-03-01",
+   "chain": "ethereum",
+   "volume_usd": 81392.8422440618
+  },
+  {
+   "month": "2023-04-01",
+   "chain": "ethereum",
+   "volume_usd": 108788.8684925557
+  },
+  {
+   "month": "2023-05-01",
+   "chain": "arbitrum",
+   "volume_usd": 4741.424814000001
+  },
+  {
+   "month": "2023-05-01",
+   "chain": "ethereum",
+   "volume_usd": 113120.51051420672
+  },
+  {
+   "month": "2023-05-01",
+   "chain": "optimism",
+   "volume_usd": 4.0
+  },
+  {
+   "month": "2023-05-01",
+   "chain": "polygon",
+   "volume_usd": 2308.429271
+  },
+  {
+   "month": "2023-06-01",
+   "chain": "arbitrum",
+   "volume_usd": 10495.047753440476
+  },
+  {
+   "month": "2023-06-01",
+   "chain": "ethereum",
+   "volume_usd": 199798.04545326906
+  },
+  {
+   "month": "2023-06-01",
+   "chain": "optimism",
+   "volume_usd": 946.5317980000001
+  },
+  {
+   "month": "2023-06-01",
+   "chain": "polygon",
+   "volume_usd": 13493.606802820002
+  },
+  {
+   "month": "2023-07-01",
+   "chain": "arbitrum",
+   "volume_usd": 15720.403425000002
+  },
+  {
+   "month": "2023-07-01",
+   "chain": "bnb",
+   "volume_usd": 9.078198160379607
+  },
+  {
+   "month": "2023-07-01",
+   "chain": "ethereum",
+   "volume_usd": 295663.42037363746
+  },
+  {
+   "month": "2023-07-01",
+   "chain": "optimism",
+   "volume_usd": 3255.1491569999994
+  },
+  {
+   "month": "2023-07-01",
+   "chain": "polygon",
+   "volume_usd": 22902.811138730212
+  },
+  {
+   "month": "2023-08-01",
+   "chain": "arbitrum",
+   "volume_usd": 2127.258121
+  },
+  {
+   "month": "2023-08-01",
+   "chain": "ethereum",
+   "volume_usd": 57825.21140740992
+  },
+  {
+   "month": "2023-08-01",
+   "chain": "optimism",
+   "volume_usd": 85.11740499999999
+  },
+  {
+   "month": "2023-08-01",
+   "chain": "polygon",
+   "volume_usd": 1330.56509
+  },
+  {
+   "month": "2023-09-01",
+   "chain": "arbitrum",
+   "volume_usd": 3293.991512
+  },
+  {
+   "month": "2023-09-01",
+   "chain": "ethereum",
+   "volume_usd": 67827.99793984256
+  },
+  {
+   "month": "2023-09-01",
+   "chain": "optimism",
+   "volume_usd": 403.553924
+  },
+  {
+   "month": "2023-09-01",
+   "chain": "polygon",
+   "volume_usd": 10806.282366999998
+  },
+  {
+   "month": "2023-10-01",
+   "chain": "arbitrum",
+   "volume_usd": 6770.013827000001
+  },
+  {
+   "month": "2023-10-01",
+   "chain": "bnb",
+   "volume_usd": 19.71
+  },
+  {
+   "month": "2023-10-01",
+   "chain": "ethereum",
+   "volume_usd": 79748.51121391756
+  },
+  {
+   "month": "2023-10-01",
+   "chain": "optimism",
+   "volume_usd": 1943.216342
+  },
+  {
+   "month": "2023-10-01",
+   "chain": "polygon",
+   "volume_usd": 7362.826073838582
+  },
+  {
+   "month": "2023-11-01",
+   "chain": "arbitrum",
+   "volume_usd": 10245.387640119909
+  },
+  {
+   "month": "2023-11-01",
+   "chain": "ethereum",
+   "volume_usd": 83951.54241691691
+  },
+  {
+   "month": "2023-11-01",
+   "chain": "optimism",
+   "volume_usd": 444.311491
+  },
+  {
+   "month": "2023-11-01",
+   "chain": "polygon",
+   "volume_usd": 11086.096979137285
+  },
+  {
+   "month": "2023-12-01",
+   "chain": "arbitrum",
+   "volume_usd": 18588.27008985796
+  },
+  {
+   "month": "2023-12-01",
+   "chain": "ethereum",
+   "volume_usd": 171865.89791710506
+  },
+  {
+   "month": "2023-12-01",
+   "chain": "optimism",
+   "volume_usd": 1073.299071
+  },
+  {
+   "month": "2023-12-01",
+   "chain": "polygon",
+   "volume_usd": 16982.075832722076
+  },
+  {
+   "month": "2024-01-01",
+   "chain": "arbitrum",
+   "volume_usd": 39051.291214000026
+  },
+  {
+   "month": "2024-01-01",
+   "chain": "ethereum",
+   "volume_usd": 228802.32216875843
+  },
+  {
+   "month": "2024-01-01",
+   "chain": "optimism",
+   "volume_usd": 2495.6951869999994
+  },
+  {
+   "month": "2024-01-01",
+   "chain": "polygon",
+   "volume_usd": 24706.03101635142
+  },
+  {
+   "month": "2024-01-01",
+   "chain": "solana",
+   "volume_usd": 19.2
+  },
+  {
+   "month": "2024-02-01",
+   "chain": "arbitrum",
+   "volume_usd": 48669.697643426145
+  },
+  {
+   "month": "2024-02-01",
+   "chain": "ethereum",
+   "volume_usd": 178377.23998482578
+  },
+  {
+   "month": "2024-02-01",
+   "chain": "optimism",
+   "volume_usd": 2118.729899361042
+  },
+  {
+   "month": "2024-02-01",
+   "chain": "polygon",
+   "volume_usd": 34058.87479361617
+  },
+  {
+   "month": "2024-02-01",
+   "chain": "solana",
+   "volume_usd": 10510.701383
+  },
+  {
+   "month": "2024-03-01",
+   "chain": "arbitrum",
+   "volume_usd": 88618.44997527507
+  },
+  {
+   "month": "2024-03-01",
+   "chain": "base",
+   "volume_usd": 22.0
+  },
+  {
+   "month": "2024-03-01",
+   "chain": "ethereum",
+   "volume_usd": 314535.0161256511
+  },
+  {
+   "month": "2024-03-01",
+   "chain": "optimism",
+   "volume_usd": 12154.829633253681
+  },
+  {
+   "month": "2024-03-01",
+   "chain": "polygon",
+   "volume_usd": 44479.06423099999
+  },
+  {
+   "month": "2024-03-01",
+   "chain": "solana",
+   "volume_usd": 37991.293585
+  },
+  {
+   "month": "2024-04-01",
+   "chain": "arbitrum",
+   "volume_usd": 64289.307960431965
+  },
+  {
+   "month": "2024-04-01",
+   "chain": "ethereum",
+   "volume_usd": 382176.40635857027
+  },
+  {
+   "month": "2024-04-01",
+   "chain": "optimism",
+   "volume_usd": 23836.641355999993
+  },
+  {
+   "month": "2024-04-01",
+   "chain": "polygon",
+   "volume_usd": 66127.91091170695
+  },
+  {
+   "month": "2024-04-01",
+   "chain": "solana",
+   "volume_usd": 73488.79217900001
+  },
+  {
+   "month": "2024-05-01",
+   "chain": "arbitrum",
+   "volume_usd": 135030.31447468942
+  },
+  {
+   "month": "2024-05-01",
+   "chain": "base",
+   "volume_usd": 4000.0
+  },
+  {
+   "month": "2024-05-01",
+   "chain": "ethereum",
+   "volume_usd": 402021.3609417374
+  },
+  {
+   "month": "2024-05-01",
+   "chain": "optimism",
+   "volume_usd": 29148.05420499516
+  },
+  {
+   "month": "2024-05-01",
+   "chain": "polygon",
+   "volume_usd": 65111.96597800008
+  },
+  {
+   "month": "2024-05-01",
+   "chain": "solana",
+   "volume_usd": 77038.12031199997
+  },
+  {
+   "month": "2024-06-01",
+   "chain": "arbitrum",
+   "volume_usd": 84855.15713746598
+  },
+  {
+   "month": "2024-06-01",
+   "chain": "base",
+   "volume_usd": 15045.0
+  },
+  {
+   "month": "2024-06-01",
+   "chain": "ethereum",
+   "volume_usd": 450585.1270160519
+  },
+  {
+   "month": "2024-06-01",
+   "chain": "optimism",
+   "volume_usd": 19185.774754000002
+  },
+  {
+   "month": "2024-06-01",
+   "chain": "polygon",
+   "volume_usd": 42721.72358872404
+  },
+  {
+   "month": "2024-06-01",
+   "chain": "solana",
+   "volume_usd": 75089.77616800001
+  },
+  {
+   "month": "2024-07-01",
+   "chain": "arbitrum",
+   "volume_usd": 44398.80798100002
+  },
+  {
+   "month": "2024-07-01",
+   "chain": "base",
+   "volume_usd": 19674.309435999996
+  },
+  {
+   "month": "2024-07-01",
+   "chain": "ethereum",
+   "volume_usd": 388904.3031198108
+  },
+  {
+   "month": "2024-07-01",
+   "chain": "optimism",
+   "volume_usd": 4332.701792
+  },
+  {
+   "month": "2024-07-01",
+   "chain": "polygon",
+   "volume_usd": 30382.037600691227
+  },
+  {
+   "month": "2024-07-01",
+   "chain": "solana",
+   "volume_usd": 74373.97730000001
+  },
+  {
+   "month": "2024-08-01",
+   "chain": "arbitrum",
+   "volume_usd": 32013.884463000006
+  },
+  {
+   "month": "2024-08-01",
+   "chain": "base",
+   "volume_usd": 50645.72
+  },
+  {
+   "month": "2024-08-01",
+   "chain": "ethereum",
+   "volume_usd": 334988.1308875079
+  },
+  {
+   "month": "2024-08-01",
+   "chain": "optimism",
+   "volume_usd": 3640.0699999999997
+  },
+  {
+   "month": "2024-08-01",
+   "chain": "polygon",
+   "volume_usd": 30096.741368999978
+  },
+  {
+   "month": "2024-08-01",
+   "chain": "solana",
+   "volume_usd": 89367.93519600002
+  },
+  {
+   "month": "2024-09-01",
+   "chain": "arbitrum",
+   "volume_usd": 33525.21540400001
+  },
+  {
+   "month": "2024-09-01",
+   "chain": "base",
+   "volume_usd": 40072.627353
+  },
+  {
+   "month": "2024-09-01",
+   "chain": "ethereum",
+   "volume_usd": 337176.55528488004
+  },
+  {
+   "month": "2024-09-01",
+   "chain": "optimism",
+   "volume_usd": 3379.7096899999997
+  },
+  {
+   "month": "2024-09-01",
+   "chain": "polygon",
+   "volume_usd": 40472.763918816425
+  },
+  {
+   "month": "2024-09-01",
+   "chain": "solana",
+   "volume_usd": 78025.13660200003
+  },
+  {
+   "month": "2024-10-01",
+   "chain": "arbitrum",
+   "volume_usd": 47336.74807000001
+  },
+  {
+   "month": "2024-10-01",
+   "chain": "base",
+   "volume_usd": 55491.054675999985
+  },
+  {
+   "month": "2024-10-01",
+   "chain": "ethereum",
+   "volume_usd": 456160.8242847583
+  },
+  {
+   "month": "2024-10-01",
+   "chain": "optimism",
+   "volume_usd": 1165.801
+  },
+  {
+   "month": "2024-10-01",
+   "chain": "polygon",
+   "volume_usd": 39534.996605999986
+  },
+  {
+   "month": "2024-10-01",
+   "chain": "solana",
+   "volume_usd": 151760.6917490001
+  },
+  {
+   "month": "2024-11-01",
+   "chain": "arbitrum",
+   "volume_usd": 46531.183789
+  },
+  {
+   "month": "2024-11-01",
+   "chain": "base",
+   "volume_usd": 57408.987211
+  },
+  {
+   "month": "2024-11-01",
+   "chain": "ethereum",
+   "volume_usd": 495474.846126212
+  },
+  {
+   "month": "2024-11-01",
+   "chain": "optimism",
+   "volume_usd": 4287.850002000002
+  },
+  {
+   "month": "2024-11-01",
+   "chain": "polygon",
+   "volume_usd": 48834.831061999976
+  },
+  {
+   "month": "2024-11-01",
+   "chain": "solana",
+   "volume_usd": 258809.7767880001
+  },
+  {
+   "month": "2024-12-01",
+   "chain": "arbitrum",
+   "volume_usd": 65200.50118500003
+  },
+  {
+   "month": "2024-12-01",
+   "chain": "base",
+   "volume_usd": 78741.19375999998
+  },
+  {
+   "month": "2024-12-01",
+   "chain": "ethereum",
+   "volume_usd": 551468.1742448199
+  },
+  {
+   "month": "2024-12-01",
+   "chain": "optimism",
+   "volume_usd": 5123.830000000001
+  },
+  {
+   "month": "2024-12-01",
+   "chain": "polygon",
+   "volume_usd": 65229.923514999944
+  },
+  {
+   "month": "2024-12-01",
+   "chain": "solana",
+   "volume_usd": 327233.5594070001
+  },
+  {
+   "month": "2025-01-01",
+   "chain": "arbitrum",
+   "volume_usd": 61632.90457899999
+  },
+  {
+   "month": "2025-01-01",
+   "chain": "base",
+   "volume_usd": 66912.30967700001
+  },
+  {
+   "month": "2025-01-01",
+   "chain": "bnb",
+   "volume_usd": 103.13
+  },
+  {
+   "month": "2025-01-01",
+   "chain": "ethereum",
+   "volume_usd": 435198.8399614332
+  },
+  {
+   "month": "2025-01-01",
+   "chain": "optimism",
+   "volume_usd": 3237.97719
+  },
+  {
+   "month": "2025-01-01",
+   "chain": "polygon",
+   "volume_usd": 47659.95816199999
+  },
+  {
+   "month": "2025-01-01",
+   "chain": "solana",
+   "volume_usd": 355192.2524320002
+  },
+  {
+   "month": "2025-02-01",
+   "chain": "arbitrum",
+   "volume_usd": 35632.53217100002
+  },
+  {
+   "month": "2025-02-01",
+   "chain": "base",
+   "volume_usd": 60034.015645999985
+  },
+  {
+   "month": "2025-02-01",
+   "chain": "bnb",
+   "volume_usd": 7912.344030821255
+  },
+  {
+   "month": "2025-02-01",
+   "chain": "ethereum",
+   "volume_usd": 361180.1076430692
+  },
+  {
+   "month": "2025-02-01",
+   "chain": "optimism",
+   "volume_usd": 3883.7900000000004
+  },
+  {
+   "month": "2025-02-01",
+   "chain": "polygon",
+   "volume_usd": 31906.670768999986
+  },
+  {
+   "month": "2025-02-01",
+   "chain": "solana",
+   "volume_usd": 280471.02213399997
+  },
+  {
+   "month": "2025-03-01",
+   "chain": "arbitrum",
+   "volume_usd": 25652.265141999997
+  },
+  {
+   "month": "2025-03-01",
+   "chain": "base",
+   "volume_usd": 31751.806200000006
+  },
+  {
+   "month": "2025-03-01",
+   "chain": "bnb",
+   "volume_usd": 10754.52453620179
+  },
+  {
+   "month": "2025-03-01",
+   "chain": "ethereum",
+   "volume_usd": 445909.00287970784
+  },
+  {
+   "month": "2025-03-01",
+   "chain": "optimism",
+   "volume_usd": 5793.800706999998
+  },
+  {
+   "month": "2025-03-01",
+   "chain": "polygon",
+   "volume_usd": 30157.52223800003
+  },
+  {
+   "month": "2025-03-01",
+   "chain": "solana",
+   "volume_usd": 277255.45981099986
+  },
+  {
+   "month": "2025-04-01",
+   "chain": "arbitrum",
+   "volume_usd": 21231.288373000003
+  },
+  {
+   "month": "2025-04-01",
+   "chain": "base",
+   "volume_usd": 35792.673945999995
+  },
+  {
+   "month": "2025-04-01",
+   "chain": "bnb",
+   "volume_usd": 56067.63775643568
+  },
+  {
+   "month": "2025-04-01",
+   "chain": "ethereum",
+   "volume_usd": 425107.9308306998
+  },
+  {
+   "month": "2025-04-01",
+   "chain": "optimism",
+   "volume_usd": 2516.6493100000002
+  },
+  {
+   "month": "2025-04-01",
+   "chain": "polygon",
+   "volume_usd": 51484.05237699996
+  },
+  {
+   "month": "2025-04-01",
+   "chain": "solana",
+   "volume_usd": 278252.868506
+  },
+  {
+   "month": "2025-05-01",
+   "chain": "arbitrum",
+   "volume_usd": 30154.448509999995
+  },
+  {
+   "month": "2025-05-01",
+   "chain": "base",
+   "volume_usd": 44493.211319999995
+  },
+  {
+   "month": "2025-05-01",
+   "chain": "bnb",
+   "volume_usd": 98801.21352769619
+  },
+  {
+   "month": "2025-05-01",
+   "chain": "ethereum",
+   "volume_usd": 478733.4221094022
+  },
+  {
+   "month": "2025-05-01",
+   "chain": "optimism",
+   "volume_usd": 5340.615951999999
+  },
+  {
+   "month": "2025-05-01",
+   "chain": "polygon",
+   "volume_usd": 53810.644255000014
+  },
+  {
+   "month": "2025-05-01",
+   "chain": "solana",
+   "volume_usd": 283325.5381680002
+  },
+  {
+   "month": "2025-06-01",
+   "chain": "arbitrum",
+   "volume_usd": 52026.50371305822
+  },
+  {
+   "month": "2025-06-01",
+   "chain": "base",
+   "volume_usd": 34128.15929599999
+  },
+  {
+   "month": "2025-06-01",
+   "chain": "bnb",
+   "volume_usd": 100852.26799900383
+  },
+  {
+   "month": "2025-06-01",
+   "chain": "ethereum",
+   "volume_usd": 412745.9305842618
+  },
+  {
+   "month": "2025-06-01",
+   "chain": "optimism",
+   "volume_usd": 1755.3779349999998
+  },
+  {
+   "month": "2025-06-01",
+   "chain": "polygon",
+   "volume_usd": 269897.93176300026
+  },
+  {
+   "month": "2025-06-01",
+   "chain": "solana",
+   "volume_usd": 281322.9725489998
+  },
+  {
+   "month": "2025-07-01",
+   "chain": "arbitrum",
+   "volume_usd": 37119.018194418306
+  },
+  {
+   "month": "2025-07-01",
+   "chain": "base",
+   "volume_usd": 39901.885848
+  },
+  {
+   "month": "2025-07-01",
+   "chain": "bnb",
+   "volume_usd": 49652.959047663244
+  },
+  {
+   "month": "2025-07-01",
+   "chain": "ethereum",
+   "volume_usd": 290743.0669739999
+  },
+  {
+   "month": "2025-07-01",
+   "chain": "optimism",
+   "volume_usd": 1097.058141
+  },
+  {
+   "month": "2025-07-01",
+   "chain": "polygon",
+   "volume_usd": 309256.3727514344
+  },
+  {
+   "month": "2025-07-01",
+   "chain": "solana",
+   "volume_usd": 340867.543048
+  },
+  {
+   "month": "2025-08-01",
+   "chain": "arbitrum",
+   "volume_usd": 42952.75285699999
+  },
+  {
+   "month": "2025-08-01",
+   "chain": "base",
+   "volume_usd": 25774.635014999985
+  },
+  {
+   "month": "2025-08-01",
+   "chain": "bnb",
+   "volume_usd": 40956.416856009724
+  },
+  {
+   "month": "2025-08-01",
+   "chain": "ethereum",
+   "volume_usd": 333662.2929728125
+  },
+  {
+   "month": "2025-08-01",
+   "chain": "optimism",
+   "volume_usd": 1341.1100000000001
+  },
+  {
+   "month": "2025-08-01",
+   "chain": "polygon",
+   "volume_usd": 331626.00064499996
+  },
+  {
+   "month": "2025-08-01",
+   "chain": "solana",
+   "volume_usd": 393754.62928500015
+  },
+  {
+   "month": "2025-09-01",
+   "chain": "arbitrum",
+   "volume_usd": 47399.52550399999
+  },
+  {
+   "month": "2025-09-01",
+   "chain": "base",
+   "volume_usd": 61167.12758299999
+  },
+  {
+   "month": "2025-09-01",
+   "chain": "bnb",
+   "volume_usd": 49948.24318771458
+  },
+  {
+   "month": "2025-09-01",
+   "chain": "ethereum",
+   "volume_usd": 374481.5320030004
+  },
+  {
+   "month": "2025-09-01",
+   "chain": "optimism",
+   "volume_usd": 2782.79
+  },
+  {
+   "month": "2025-09-01",
+   "chain": "polygon",
+   "volume_usd": 291347.1394300001
+  },
+  {
+   "month": "2025-09-01",
+   "chain": "solana",
+   "volume_usd": 373123.7242929999
+  },
+  {
+   "month": "2025-10-01",
+   "chain": "arbitrum",
+   "volume_usd": 53717.07884799999
+  },
+  {
+   "month": "2025-10-01",
+   "chain": "base",
+   "volume_usd": 38050.660054
+  },
+  {
+   "month": "2025-10-01",
+   "chain": "bnb",
+   "volume_usd": 72126.39797656306
+  },
+  {
+   "month": "2025-10-01",
+   "chain": "ethereum",
+   "volume_usd": 336850.620581
+  },
+  {
+   "month": "2025-10-01",
+   "chain": "optimism",
+   "volume_usd": 1911.56
+  },
+  {
+   "month": "2025-10-01",
+   "chain": "polygon",
+   "volume_usd": 281997.65751999983
+  },
+  {
+   "month": "2025-10-01",
+   "chain": "solana",
+   "volume_usd": 442782.68909400003
+  },
+  {
+   "month": "2025-11-01",
+   "chain": "arbitrum",
+   "volume_usd": 46166.022220999985
+  },
+  {
+   "month": "2025-11-01",
+   "chain": "base",
+   "volume_usd": 43421.203773
+  },
+  {
+   "month": "2025-11-01",
+   "chain": "bnb",
+   "volume_usd": 50715.2397049351
+  },
+  {
+   "month": "2025-11-01",
+   "chain": "ethereum",
+   "volume_usd": 430913.01328899997
+  },
+  {
+   "month": "2025-11-01",
+   "chain": "optimism",
+   "volume_usd": 120.71
+  },
+  {
+   "month": "2025-11-01",
+   "chain": "polygon",
+   "volume_usd": 296143.1219240001
+  },
+  {
+   "month": "2025-11-01",
+   "chain": "solana",
+   "volume_usd": 427321.3556709997
+  },
+  {
+   "month": "2025-12-01",
+   "chain": "arbitrum",
+   "volume_usd": 67195.38733100002
+  },
+  {
+   "month": "2025-12-01",
+   "chain": "base",
+   "volume_usd": 25046.784610000024
+  },
+  {
+   "month": "2025-12-01",
+   "chain": "bnb",
+   "volume_usd": 49308.99221294931
+  },
+  {
+   "month": "2025-12-01",
+   "chain": "ethereum",
+   "volume_usd": 325548.4726950002
+  },
+  {
+   "month": "2025-12-01",
+   "chain": "optimism",
+   "volume_usd": 919.939896
+  },
+  {
+   "month": "2025-12-01",
+   "chain": "polygon",
+   "volume_usd": 153587.6856871747
+  },
+  {
+   "month": "2025-12-01",
+   "chain": "solana",
+   "volume_usd": 259588.87057000003
+  },
+  {
+   "month": "2026-01-01",
+   "chain": "arbitrum",
+   "volume_usd": 68946.29370400001
+  },
+  {
+   "month": "2026-01-01",
+   "chain": "base",
+   "volume_usd": 30752.729929000005
+  },
+  {
+   "month": "2026-01-01",
+   "chain": "bnb",
+   "volume_usd": 46373.54290426699
+  },
+  {
+   "month": "2026-01-01",
+   "chain": "ethereum",
+   "volume_usd": 341689.33783236006
+  },
+  {
+   "month": "2026-01-01",
+   "chain": "optimism",
+   "volume_usd": 139.013219
+  },
+  {
+   "month": "2026-01-01",
+   "chain": "polygon",
+   "volume_usd": 26872.819887
+  },
+  {
+   "month": "2026-01-01",
+   "chain": "solana",
+   "volume_usd": 272704.98803300003
+  },
+  {
+   "month": "2026-02-01",
+   "chain": "arbitrum",
+   "volume_usd": 59671.031626
+  },
+  {
+   "month": "2026-02-01",
+   "chain": "base",
+   "volume_usd": 26778.561932000004
+  },
+  {
+   "month": "2026-02-01",
+   "chain": "bnb",
+   "volume_usd": 26333.95886249353
+  },
+  {
+   "month": "2026-02-01",
+   "chain": "ethereum",
+   "volume_usd": 290280.3014140003
+  },
+  {
+   "month": "2026-02-01",
+   "chain": "optimism",
+   "volume_usd": 1.0
+  },
+  {
+   "month": "2026-02-01",
+   "chain": "polygon",
+   "volume_usd": 19859.256637000002
+  },
+  {
+   "month": "2026-02-01",
+   "chain": "solana",
+   "volume_usd": 152766.74382699997
+  },
+  {
+   "month": "2026-03-01",
+   "chain": "arbitrum",
+   "volume_usd": 61626.11510299999
+  },
+  {
+   "month": "2026-03-01",
+   "chain": "base",
+   "volume_usd": 22372.670269000002
+  },
+  {
+   "month": "2026-03-01",
+   "chain": "bnb",
+   "volume_usd": 28266.61886326753
+  },
+  {
+   "month": "2026-03-01",
+   "chain": "ethereum",
+   "volume_usd": 354913.9024230003
+  },
+  {
+   "month": "2026-03-01",
+   "chain": "optimism",
+   "volume_usd": 145.47
+  },
+  {
+   "month": "2026-03-01",
+   "chain": "polygon",
+   "volume_usd": 28903.94727019642
+  },
+  {
+   "month": "2026-03-01",
+   "chain": "solana",
+   "volume_usd": 319507.0616650002
+  },
+  {
+   "month": "2026-04-01",
+   "chain": "arbitrum",
+   "volume_usd": 61675.07461900002
+  },
+  {
+   "month": "2026-04-01",
+   "chain": "base",
+   "volume_usd": 49930.685898
+  },
+  {
+   "month": "2026-04-01",
+   "chain": "bnb",
+   "volume_usd": 34302.08171895498
+  },
+  {
+   "month": "2026-04-01",
+   "chain": "ethereum",
+   "volume_usd": 458754.03383407404
+  },
+  {
+   "month": "2026-04-01",
+   "chain": "optimism",
+   "volume_usd": 2059.526572
+  },
+  {
+   "month": "2026-04-01",
+   "chain": "polygon",
+   "volume_usd": 32263.935913999994
+  },
+  {
+   "month": "2026-04-01",
+   "chain": "solana",
+   "volume_usd": 363953.1268379999
+  },
+  {
+   "month": "2026-05-01",
+   "chain": "arbitrum",
+   "volume_usd": 83739.15022599997
+  },
+  {
+   "month": "2026-05-01",
+   "chain": "base",
+   "volume_usd": 31812.778018999998
+  },
+  {
+   "month": "2026-05-01",
+   "chain": "bnb",
+   "volume_usd": 33186.93859404233
+  },
+  {
+   "month": "2026-05-01",
+   "chain": "ethereum",
+   "volume_usd": 477563.9872908942
+  },
+  {
+   "month": "2026-05-01",
+   "chain": "polygon",
+   "volume_usd": 18125.056486
+  },
+  {
+   "month": "2026-05-01",
+   "chain": "solana",
+   "volume_usd": 564590.2233520002
+  },
+  {
+   "month": "2026-06-01",
+   "chain": "arbitrum",
+   "volume_usd": 89239.88983599997
+  },
+  {
+   "month": "2026-06-01",
+   "chain": "base",
+   "volume_usd": 25318.179312
+  },
+  {
+   "month": "2026-06-01",
+   "chain": "bnb",
+   "volume_usd": 39777.25165871769
+  },
+  {
+   "month": "2026-06-01",
+   "chain": "ethereum",
+   "volume_usd": 453798.47754999995
+  },
+  {
+   "month": "2026-06-01",
+   "chain": "polygon",
+   "volume_usd": 25993.544854000003
+  },
+  {
+   "month": "2026-06-01",
+   "chain": "solana",
+   "volume_usd": 519993.43920299987
+  },
+  {
+   "month": "2026-07-01",
+   "chain": "arbitrum",
+   "volume_usd": 81485.240484
+  },
+  {
+   "month": "2026-07-01",
+   "chain": "base",
+   "volume_usd": 22728.083617999997
+  },
+  {
+   "month": "2026-07-01",
+   "chain": "bnb",
+   "volume_usd": 33373.17337827784
+  },
+  {
+   "month": "2026-07-01",
+   "chain": "ethereum",
+   "volume_usd": 377715.0215539999
+  },
+  {
+   "month": "2026-07-01",
+   "chain": "optimism",
+   "volume_usd": 599.646039
+  },
+  {
+   "month": "2026-07-01",
+   "chain": "polygon",
+   "volume_usd": 14973.913845000001
+  },
+  {
+   "month": "2026-07-01",
+   "chain": "solana",
+   "volume_usd": 616508.2787340007
+  },
+  {
+   "month": "2026-08-01",
+   "chain": "arbitrum",
+   "volume_usd": 62192.31026200001
+  },
+  {
+   "month": "2026-08-01",
+   "chain": "base",
+   "volume_usd": 44505.308519
+  },
+  {
+   "month": "2026-08-01",
+   "chain": "bnb",
+   "volume_usd": 26245.530580292645
+  },
+  {
+   "month": "2026-08-01",
+   "chain": "ethereum",
+   "volume_usd": 301190.7726188148
+  },
+  {
+   "month": "2026-08-01",
+   "chain": "optimism",
+   "volume_usd": 102.0
+  },
+  {
+   "month": "2026-08-01",
+   "chain": "polygon",
+   "volume_usd": 16930.619999999995
+  },
+  {
+   "month": "2026-08-01",
+   "chain": "solana",
+   "volume_usd": 802331.0927359989
+  },
+  {
+   "month": "2026-09-01",
+   "chain": "arbitrum",
+   "volume_usd": 70803.68663899999
+  },
+  {
+   "month": "2026-09-01",
+   "chain": "base",
+   "volume_usd": 48705.539315
+  },
+  {
+   "month": "2026-09-01",
+   "chain": "bnb",
+   "volume_usd": 25992.04436968168
+  },
+  {
+   "month": "2026-09-01",
+   "chain": "ethereum",
+   "volume_usd": 270706.7831358041
+  },
+  {
+   "month": "2026-09-01",
+   "chain": "optimism",
+   "volume_usd": 13.0
+  },
+  {
+   "month": "2026-09-01",
+   "chain": "polygon",
+   "volume_usd": 21650.981192
+  },
+  {
+   "month": "2026-09-01",
+   "chain": "solana",
+   "volume_usd": 845477.2850969989
+  },
+  {
+   "month": "2026-10-01",
+   "chain": "arbitrum",
+   "volume_usd": 40347.4547
+  },
+  {
+   "month": "2026-10-01",
+   "chain": "base",
+   "volume_usd": 17362.889398009072
+  },
+  {
+   "month": "2026-10-01",
+   "chain": "bnb",
+   "volume_usd": 22122.280000000002
+  },
+  {
+   "month": "2026-10-01",
+   "chain": "ethereum",
+   "volume_usd": 115865.755435
+  },
+  {
+   "month": "2026-10-01",
+   "chain": "polygon",
+   "volume_usd": 10331.674513
+  },
+  {
+   "month": "2026-10-01",
+   "chain": "solana",
+   "volume_usd": 367098.59779099986
+  }
+ ],
+ "volume_since_2024": 29708431.844170578,
+ "volume_30d": 1327403.0464431315,
+ "solana_sweeps": {
+  "volume_usd": 1220087.4067849934,
+  "deposits": 3294,
+  "addresses": 954,
+  "volume_30d": 283498.9354890003,
+  "deposits_30d": 837,
+  "addresses_30d": 322,
+  "monthly": [
+   {
+    "month": "2026-01-01",
+    "volume_usd": 21072.910461,
+    "deposits": 16
+   },
+   {
+    "month": "2026-02-01",
+    "volume_usd": 10865.895663,
+    "deposits": 12
+   },
+   {
+    "month": "2026-03-01",
+    "volume_usd": 20534.383111,
+    "deposits": 15
+   },
+   {
+    "month": "2026-04-01",
+    "volume_usd": 19203.497088000004,
+    "deposits": 14
+   },
+   {
+    "month": "2026-05-01",
+    "volume_usd": 41960.194786999986,
+    "deposits": 97
+   },
+   {
+    "month": "2026-06-01",
+    "volume_usd": 80161.20372199996,
+    "deposits": 226
+   },
+   {
+    "month": "2026-07-01",
+    "volume_usd": 232907.94129999977,
+    "deposits": 761
+   },
+   {
+    "month": "2026-08-01",
+    "volume_usd": 310681.9058080005,
+    "deposits": 871
+   },
+   {
+    "month": "2026-09-01",
+    "volume_usd": 292042.9236800004,
+    "deposits": 862
+   },
+   {
+    "month": "2026-10-01",
+    "volume_usd": 110663.36364599995,
+    "deposits": 322
+   }
+  ]
+ },
+ "top_senders": [
+  {
+   "sender": "9sZEFeQDPyjjFjZM9jK6i6L5eWMCrTHB7pCWjU1k9WXR",
+   "chain": "solana",
+   "volume_usd": 634522.2021440002,
+   "deposits": 113
+  },
+  {
+   "sender": "3CF7wbYG2Drvz8bQMzrvSzxoLVPjuP2pkpxuhmcE7Xum",
+   "chain": "solana",
+   "volume_usd": 500839.868918,
+   "deposits": 75
+  },
+  {
+   "sender": "0xcb39c5b0db9c5b6bd1d9273dccc2f98f532a8bc6",
+   "chain": "polygon",
+   "volume_usd": 454133.525103,
+   "deposits": 67
+  },
+  {
+   "sender": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+   "chain": "ethereum",
+   "volume_usd": 310730.52360651304,
+   "deposits": 150
+  },
+  {
+   "sender": "DPqsobysNf5iA9w7zrQM8HLzCKZEDMkZsWbiidsAt1xo",
+   "chain": "solana",
+   "volume_usd": 245429.69999999998,
+   "deposits": 22
+  },
+  {
+   "sender": "9obNtb5GyUegcs3a1CbBkLuc5hEWynWfJC6gjz5uWQkE",
+   "chain": "solana",
+   "volume_usd": 196231.11999800004,
+   "deposits": 29
+  },
+  {
+   "sender": "D89hHJT5Aqyx1trP6EnGY9jJUB3whgnq3aUvvCqedvzf",
+   "chain": "solana",
+   "volume_usd": 188825.62999999998,
+   "deposits": 23
+  },
+  {
+   "sender": "0xbebbe491e0f9422f427e8ca45fdc3575aa258d18",
+   "chain": "ethereum",
+   "volume_usd": 182451.53999999998,
+   "deposits": 96
+  },
+  {
+   "sender": "2AQdpHJ2JpcEgPiATUXjQxA8QmafFegfQwSLWSprPicm",
+   "chain": "solana",
+   "volume_usd": 181517.10000000003,
+   "deposits": 20
+  },
+  {
+   "sender": "4XMTsBivE5V73ScmuChGVLS6oF8MFb2P3fvR3gt9So9J",
+   "chain": "solana",
+   "volume_usd": 169614.896156,
+   "deposits": 9
+  },
+  {
+   "sender": "FpwQQhQQoEaVu3WU2qZMfF1hx48YyfwsLoRgXG83E99Q",
+   "chain": "solana",
+   "volume_usd": 151536.09999999998,
+   "deposits": 13
+  },
+  {
+   "sender": "0x3eb9845b9c8f835ad130456f8dab6aef79af5272",
+   "chain": "polygon",
+   "volume_usd": 144124.91178599998,
+   "deposits": 23
+  },
+  {
+   "sender": "0x3e8a322ce4382c8134ff711a58f0d5a3ee6c04b6",
+   "chain": "ethereum",
+   "volume_usd": 142451.93,
+   "deposits": 73
+  },
+  {
+   "sender": "4NyK1AdJBNbgaJ9EsKz3J4rfeHsuYdjkTPg3JaNdLeFw",
+   "chain": "solana",
+   "volume_usd": 139424.71999999997,
+   "deposits": 22
+  },
+  {
+   "sender": "H8sMJSCQxfKiFTCfDR3DUMLPwcRbM61LGFJ8N4dK3WjS",
+   "chain": "solana",
+   "volume_usd": 138739.71,
+   "deposits": 18
+  },
+  {
+   "sender": "GJRs4FwHtemZ5ZE9x3FNvJ8TMwitKTh21yxdRPqn7npE",
+   "chain": "solana",
+   "volume_usd": 138244.53,
+   "deposits": 16
+  },
+  {
+   "sender": "0x6d7b92303629043e8d265c3a5fb26f4da9346ff3",
+   "chain": "polygon",
+   "volume_usd": 127574.97,
+   "deposits": 9
+  },
+  {
+   "sender": "0x1985ea6e9c68e1c272d8209f3b478ac2fdb25c87",
+   "chain": "base",
+   "volume_usd": 125091.93546400005,
+   "deposits": 81
+  },
+  {
+   "sender": "CreQJ2t94QK5dsxUZGXfPJ8Nx7wA9LHr5chxjSMkbNft",
+   "chain": "solana",
+   "volume_usd": 117479.14453900003,
+   "deposits": 58
+  },
+  {
+   "sender": "5g7yNHyGLJ7fiQ9SN9mf47opDnMjc585kqXWt6d7aBWs",
+   "chain": "solana",
+   "volume_usd": 116451.85999999999,
+   "deposits": 12
+  },
+  {
+   "sender": "0x8b45d1caccb3593e9f1015ba8e97afb68de3a0d1",
+   "chain": "ethereum",
+   "volume_usd": 115800.41,
+   "deposits": 8
+  },
+  {
+   "sender": "0x7153ed55bd6cf80d00ef38779278e9286462514c",
+   "chain": "ethereum",
+   "volume_usd": 113876.54,
+   "deposits": 70
+  },
+  {
+   "sender": "0xdead9a1ae5481e3eb4d22497511b6187544faded",
+   "chain": "ethereum",
+   "volume_usd": 113634.76009000003,
+   "deposits": 274
+  },
+  {
+   "sender": "0xe8d488bc16febef7a10004d97451581f3de3e5e7",
+   "chain": "polygon",
+   "volume_usd": 113414.84189999998,
+   "deposits": 18
+  },
+  {
+   "sender": "0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43",
+   "chain": "ethereum",
+   "volume_usd": 110377.94914000001,
+   "deposits": 52
+  }
+ ]
+}

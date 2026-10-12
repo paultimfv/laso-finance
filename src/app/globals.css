@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+/* Laso research terminal. Dark by default, light on toggle: graphite surfaces, Laso blue as the single signal colour,
+   JetBrains Mono throughout, set a touch smaller with open leading so prose stays readable. The card on the business page is the one loud object. */
+:root {
+  color-scheme: dark;
+  --page: #14171c;
+  --surface: #1a1e25;
+  --raised: #20252e;
+  --wash: #1d2735;
+  --ink: #e8ecf1;
+  --ink-2: #a3adba;
+  --muted: #6c7684;
+  --line: #262c35;
+  --line-strong: #353d49;
+  --accent: #4a9be8;
+  --accent-ink: #7ab7f0;
+  --card: #08090b;
+  --up: #4cc38a;
+  --down: #e5675f;
+  --mark-back: #8b929c;
+  --mark-front: #e8ecf1;
+  --glow: rgba(74, 155, 232, 0.07);
+}
+
+/* light: Laso's white pages, slate ink, a deeper blue so the accent holds contrast on white */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page: #ffffff;
+  --surface: #f6f7f9;
+  --raised: #eef1f5;
+  --wash: #eaf2fb;
+  --ink: #14171c;
+  --ink-2: #4a5361;
+  --muted: #7c8694;
+  --line: #e4e7ec;
+  --line-strong: #cfd5dd;
+  --accent: #2f7fd1;
+  --accent-ink: #1f63aa;
+  --up: #23874f;
+  --down: #c8433a;
+  --mark-back: #9aa1aa;
+  --mark-front: #1b1e24;
+  --glow: rgba(47, 127, 209, 0.06);
+}
+
+@theme inline {
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-raised: var(--raised);
+  --color-wash: var(--wash);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-card: var(--card);
+  --color-up: var(--up);
+  --color-down: var(--down);
+  --font-sans: var(--font-code);
+  --font-mono: var(--font-code);
+}
+
+html { background: var(--page); }
+
+body {
+  background:
+    radial-gradient(1200px 520px at 78% -120px, var(--glow), transparent 70%),
+    var(--page);
+  color: var(--ink);
+  font-family: var(--font-code), system-ui, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.65;
+  font-feature-settings: "calt" 0;  /* no ligatures: != and => stay literal */
+}
+
+::selection { background: color-mix(in srgb, var(--accent) 35%, transparent); }
+
+code {
+  font-family: var(--font-code), ui-monospace, monospace;
+  font-size: 0.9em;
+  color: var(--ink-2);
+}
+
+.num { font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+
+/* the mark: two offset slabs, light behind dark, after Laso's logo */
+.mark { position: relative; display: inline-block; width: 18px; height: 16px; }
+.mark::before, .mark::after { content: ""; position: absolute; top: 1px; width: 11px; height: 14px; border-radius: 2.5px; transform: skewX(-12deg); }
+.mark::before { left: 1px; background: var(--mark-back); }
+.mark::after { left: 6px; background: var(--mark-front); box-shadow: -1px 0 0 var(--page); }
+
+/* the card stays black in both themes; its mark is always the dark-theme one */
+.laso-card .mark { --mark-back: #8b929c; --mark-front: #e8ecf1; --page: #08090b; }
+.laso-card {
+  background:
+    radial-gradient(120% 90% at 100% 0%, rgba(255, 255, 255, 0.06), transparent 55%),
+    linear-gradient(160deg, #111318 0%, var(--card) 60%);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07) inset, 0 30px 60px -30px rgba(0, 0, 0, 0.9), 0 0 0 1px #000;
+}
+.emboss { color: #dfe3e8; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9), 0 -1px 0 rgba(255, 255, 255, 0.08); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .card-in { animation: card-in 700ms cubic-bezier(0.2, 0.7, 0.1, 1) both; }
+  @keyframes card-in { from { opacity: 0; transform: translateY(10px) rotate(-1.5deg); } to { opacity: 1; transform: none; } }
+}
+
+input[type="range"] { accent-color: var(--accent); }
+input[type="checkbox"] { accent-color: var(--accent); }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+.recharts-wrapper svg:focus, .recharts-surface:focus { outline: none; }
+:root[data-theme="light"] .laso-card { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07) inset, 0 24px 48px -24px rgba(20, 23, 28, 0.45), 0 0 0 1px #000; }

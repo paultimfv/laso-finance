@@ -1,0 +1,35 @@
+name: daily refresh
+on:
+  schedule:
+    - cron: "45 6 * * *"     # 06:45 UTC
+  workflow_dispatch:
+concurrency: daily
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: pull and build
+        working-directory: scripts
+        env:
+          RPC_URL: ${{ secrets.RPC_URL }}
+          BLOCKSCOUT_KEY: ${{ secrets.BLOCKSCOUT_KEY }}
+          HELIUS_KEY: ${{ secrets.HELIUS_KEY }}
+        run: |
+          python -u pull_deposits.py ethereum arbitrum optimism base polygon bnb solana | grep -v "so far"
+          python -u pull_x402.py
+          python build_deposits.py
+          python build_x402.py
+      # the push redeploys the site (Vercel is connected to this repo)
+      - name: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/raw src/data
+          git diff --cached --quiet || git commit -m "data: daily refresh $(date -u +%F)"
+          git push

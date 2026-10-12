@@ -1,0 +1,279 @@
+{
+ "as_of": "2026-10-12",
+ "x402": {
+  "volume_usd": 16335.07100000012,
+  "payments": 1436,
+  "payers": 287,
+  "submitters": 26,
+  "first": "2025-10-26",
+  "avg_usd": 11.375397632312062
+ },
+ "x402_30d": {
+  "volume_usd": 1297.1519999999987,
+  "payments": 86,
+  "payers": 57
+ },
+ "other_in_usd": 440722.78639100114,
+ "monthly": [
+  {
+   "month": "2025-01-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 43506.08967700001,
+   "x402_payments": 0
+  },
+  {
+   "month": "2025-02-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 37024.54564699999,
+   "x402_payments": 0
+  },
+  {
+   "month": "2025-03-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 22184.023867000004,
+   "x402_payments": 0
+  },
+  {
+   "month": "2025-04-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 22904.213946000007,
+   "x402_payments": 0
+  },
+  {
+   "month": "2025-05-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 26604.546697,
+   "x402_payments": 0
+  },
+  {
+   "month": "2025-06-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 20272.476517999996,
+   "x402_payments": 0
+  },
+  {
+   "month": "2025-07-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 12557.767129,
+   "x402_payments": 0
+  },
+  {
+   "month": "2025-08-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 1141.0690749999999,
+   "x402_payments": 0
+  },
+  {
+   "month": "2025-09-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 11362.373683,
+   "x402_payments": 0
+  },
+  {
+   "month": "2025-10-01",
+   "x402_usd": 0.5,
+   "transfer_usd": 5155.303761,
+   "x402_payments": 1
+  },
+  {
+   "month": "2025-11-01",
+   "x402_usd": 0.004,
+   "transfer_usd": 2663.272185,
+   "x402_payments": 4
+  },
+  {
+   "month": "2025-12-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 7643.706847999999,
+   "x402_payments": 0
+  },
+  {
+   "month": "2026-01-01",
+   "x402_usd": 0.0,
+   "transfer_usd": 912.2229289999999,
+   "x402_payments": 0
+  },
+  {
+   "month": "2026-02-01",
+   "x402_usd": 289.875,
+   "transfer_usd": 712.7519319999999,
+   "x402_payments": 68
+  },
+  {
+   "month": "2026-03-01",
+   "x402_usd": 1314.1079999999972,
+   "transfer_usd": 37.790269,
+   "x402_payments": 374
+  },
+  {
+   "month": "2026-04-01",
+   "x402_usd": 1094.1299999999983,
+   "transfer_usd": 414.92928299999994,
+   "x402_payments": 159
+  },
+  {
+   "month": "2026-05-01",
+   "x402_usd": 3436.422000000005,
+   "transfer_usd": 11.885105000000001,
+   "x402_payments": 207
+  },
+  {
+   "month": "2026-06-01",
+   "x402_usd": 3238.0690000000036,
+   "transfer_usd": 12.227212,
+   "x402_payments": 96
+  },
+  {
+   "month": "2026-07-01",
+   "x402_usd": 1005.3089999999991,
+   "transfer_usd": 266.612709,
+   "x402_payments": 66
+  },
+  {
+   "month": "2026-08-01",
+   "x402_usd": 3461.7060000000106,
+   "transfer_usd": 337.648519,
+   "x402_payments": 166
+  },
+  {
+   "month": "2026-09-01",
+   "x402_usd": 1899.8169999999968,
+   "transfer_usd": 9826.469315,
+   "x402_payments": 265
+  },
+  {
+   "month": "2026-10-01",
+   "x402_usd": 595.131,
+   "transfer_usd": 15448.357649,
+   "x402_payments": 30
+  }
+ ],
+ "top_payers": [
+  {
+   "payer": "0x66701482f1d1540cd0f7f18f4816654a7b4eb2e8",
+   "share": 0.33741683767398134,
+   "volume_usd": 5511.728000000001,
+   "payments": 103,
+   "first": "2026-05-16",
+   "last": "2026-10-10"
+  },
+  {
+   "payer": "0xef587f1b0957ebe558bdcc59a769dfb56d635646",
+   "share": 0.12355471243436801,
+   "volume_usd": 2018.2749999999992,
+   "payments": 43,
+   "first": "2026-05-17",
+   "last": "2026-08-25"
+  },
+  {
+   "payer": "0x201ed77e1e38fc49a726800f680f96b858258e81",
+   "share": 0.06324465929777659,
+   "volume_usd": 1033.1059999999984,
+   "payments": 152,
+   "first": "2026-08-30",
+   "last": "2026-09-11"
+  },
+  {
+   "payer": "0xa9ad148903c450b669237b63f33a4cb625e39d87",
+   "share": 0.054926176935502356,
+   "volume_usd": 897.223,
+   "payments": 49,
+   "first": "2026-04-30",
+   "last": "2026-05-15"
+  },
+  {
+   "payer": "0x807c7076556ee5325166f5148fad850dbfdc0098",
+   "share": 0.034894859042852985,
+   "volume_usd": 570.0099999999998,
+   "payments": 52,
+   "first": "2026-03-26",
+   "last": "2026-04-15"
+  },
+  {
+   "payer": "0x904d80c5e4bf9f6290db727cbee8c1905a29391e",
+   "share": 0.033366001286434285,
+   "volume_usd": 545.0359999999994,
+   "payments": 55,
+   "first": "2026-08-26",
+   "last": "2026-09-10"
+  },
+  {
+   "payer": "0xdf7abd91a3e2deaec02ed7c2936871158a337663",
+   "share": 0.028713435038023198,
+   "volume_usd": 469.03600000000006,
+   "payments": 60,
+   "first": "2026-03-30",
+   "last": "2026-08-27"
+  },
+  {
+   "payer": "0x7985962fbd185572099c179e0fbe658b0b52d0ff",
+   "share": 0.018977572855361186,
+   "volume_usd": 310.0,
+   "payments": 3,
+   "first": "2026-03-19",
+   "last": "2026-04-25"
+  },
+  {
+   "payer": "0x989ba7486f2edcdc17feeb4a6c2c278529e58d53",
+   "share": 0.018598021398253964,
+   "volume_usd": 303.8,
+   "payments": 3,
+   "first": "2026-05-12",
+   "last": "2026-05-12"
+  },
+  {
+   "payer": "0xd005094784f0569b3d3f836f0bf998685543be5c",
+   "share": 0.014969019724493283,
+   "volume_usd": 244.52,
+   "payments": 3,
+   "first": "2026-07-20",
+   "last": "2026-07-23"
+  }
+ ],
+ "outflows": {
+  "volume_usd": 903643.8326599995,
+  "transfers": 1197
+ },
+ "top_destinations": [
+  {
+   "address": "0x05f81020bfb3e4c24d1721552be6fe6b45b1ed41",
+   "volume_usd": 547963.4899999999,
+   "transfers": 568
+  },
+  {
+   "address": "0x14956d67e85b124bf0abe9be157f32994ac87171",
+   "volume_usd": 119479.04159899999,
+   "transfers": 50
+  },
+  {
+   "address": "0xd89a945c1e60716bdeb4a451c25a82538236ae25",
+   "volume_usd": 28732.705639,
+   "transfers": 75
+  },
+  {
+   "address": "0xf14e2cd3b57582c1d597329c16221024bc8587ae",
+   "volume_usd": 24934.52,
+   "transfers": 22
+  },
+  {
+   "address": "0x2b8617484f9844137f18c6397dfcb741a7e1e565",
+   "volume_usd": 22745.771554,
+   "transfers": 23
+  },
+  {
+   "address": "0x3980b73d637f0c7fb4a327c80c61f5d9adada9f5",
+   "volume_usd": 19246.617652999994,
+   "transfers": 19
+  },
+  {
+   "address": "0xa3da8ffc1d131f917f9d0ac078d82914e75d9651",
+   "volume_usd": 17036.276166000003,
+   "transfers": 10
+  },
+  {
+   "address": "0x739bc23d696299c922e01b3f4972ae9fe44e0bf8",
+   "volume_usd": 16808.0,
+   "transfers": 3
+  }
+ ]
+}
