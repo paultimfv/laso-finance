@@ -10,8 +10,8 @@
   "solana": "2026-10-12"
  },
  "totals": {
-  "volume_usd": 31216605.43408711,
-  "deposits": 91762,
+  "volume_usd": 31216908.423502304,
+  "deposits": 91763,
   "senders": 23800
  },
  "by_address": [
@@ -82,8 +82,8 @@
    "address": "0x76630b66b0cf7858186dc7031ad1e7e29a13168c",
    "chain": "arbitrum",
    "flow": "Account balance (Arbitrum) + BTC swap treasury",
-   "volume_usd": 692127.036912102,
-   "deposits": 2215,
+   "volume_usd": 692430.026328102,
+   "deposits": 2216,
    "first": "2023-12-06",
    "last": "2026-10-12"
   },
@@ -1548,7 +1548,7 @@
   {
    "month": "2026-10-01",
    "chain": "arbitrum",
-   "volume_usd": 40347.4547
+   "volume_usd": 40650.444116
   },
   {
    "month": "2026-10-01",
@@ -1576,13 +1576,13 @@
    "volume_usd": 367098.59779099986
   }
  ],
- "volume_since_2024": 29708431.844170578,
- "volume_30d": 1327403.0464431315,
+ "volume_since_2024": 29708734.833586,
+ "volume_30d": 1320734.7683611338,
  "solana_sweeps": {
-  "volume_usd": 1220087.4067849934,
+  "volume_usd": 1220087.4067849999,
   "deposits": 3294,
   "addresses": 954,
-  "volume_30d": 283498.9354890003,
+  "volume_30d": 283498.935489,
   "deposits_30d": 837,
   "addresses_30d": 322,
   "monthly": [
