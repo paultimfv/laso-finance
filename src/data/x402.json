@@ -1,19 +1,19 @@
 {
- "as_of": "2026-11-04",
+ "as_of": "2026-11-05",
  "x402": {
-  "volume_usd": 18551.871,
-  "payments": 1835,
-  "payers": 350,
+  "volume_usd": 18713.382999999998,
+  "payments": 1850,
+  "payers": 352,
   "submitters": 26,
   "first": "2025-10-26",
-  "avg_usd": 10.110011444141689
+  "avg_usd": 10.115342162162161
  },
  "x402_30d": {
-  "volume_usd": 2811.924,
-  "payments": 422,
+  "volume_usd": 2955.574,
+  "payments": 433,
   "payers": 82
  },
- "other_in_usd": 452694.437723,
+ "other_in_usd": 453729.367723,
  "monthly": [
   {
    "month": "2025-01-01",
@@ -149,23 +149,23 @@
   },
   {
    "month": "2026-11-01",
-   "x402_usd": 547.5529999999995,
-   "transfer_usd": 1097.2964690000001,
-   "x402_payments": 62
+   "x402_usd": 709.0649999999993,
+   "transfer_usd": 2132.226469,
+   "x402_payments": 77
   }
  ],
  "top_payers": [
   {
    "payer": "0x66701482f1d1540cd0f7f18f4816654a7b4eb2e8",
-   "share": 0.3497049974096954,
-   "volume_usd": 6487.682000000003,
-   "payments": 122,
+   "share": 0.34668686041428237,
+   "volume_usd": 6487.684000000004,
+   "payments": 124,
    "first": "2026-05-16",
-   "last": "2026-11-03"
+   "last": "2026-11-04"
   },
   {
    "payer": "0xef587f1b0957ebe558bdcc59a769dfb56d635646",
-   "share": 0.10879107557399462,
+   "share": 0.10785211845447717,
    "volume_usd": 2018.277999999999,
    "payments": 46,
    "first": "2026-05-17",
@@ -173,7 +173,7 @@
   },
   {
    "payer": "0x201ed77e1e38fc49a726800f680f96b858258e81",
-   "share": 0.05568742904691384,
+   "share": 0.05520680039520372,
    "volume_usd": 1033.1059999999984,
    "payments": 152,
    "first": "2026-08-30",
@@ -181,7 +181,7 @@
   },
   {
    "payer": "0xa9ad148903c450b669237b63f33a4cb625e39d87",
-   "share": 0.04836293870305588,
+   "share": 0.0479455264716166,
    "volume_usd": 897.223,
    "payments": 49,
    "first": "2026-04-30",
@@ -189,7 +189,7 @@
   },
   {
    "payer": "0x807c7076556ee5325166f5148fad850dbfdc0098",
-   "share": 0.030725202864983255,
+   "share": 0.03046001890732423,
    "volume_usd": 570.0099999999998,
    "payments": 52,
    "first": "2026-03-26",
@@ -197,31 +197,31 @@
   },
   {
    "payer": "0x904d80c5e4bf9f6290db727cbee8c1905a29391e",
-   "share": 0.029379031365623413,
+   "share": 0.029125465983355303,
    "volume_usd": 545.0359999999994,
    "payments": 55,
    "first": "2026-08-26",
    "last": "2026-09-10"
   },
   {
+   "payer": "0x5da0681e150ebfd4587fad36b54120b59dc4c5e0",
+   "share": 0.027734162230313997,
+   "volume_usd": 519.0,
+   "payments": 4,
+   "first": "2026-10-23",
+   "last": "2026-11-05"
+  },
+  {
    "payer": "0xdf7abd91a3e2deaec02ed7c2936871158a337663",
-   "share": 0.025282409520851028,
+   "share": 0.025064201379301654,
    "volume_usd": 469.03600000000006,
    "payments": 60,
    "first": "2026-03-30",
    "last": "2026-08-27"
   },
   {
-   "payer": "0x5da0681e150ebfd4587fad36b54120b59dc4c5e0",
-   "share": 0.019890177114750315,
-   "volume_usd": 369.0,
-   "payments": 3,
-   "first": "2026-10-23",
-   "last": "2026-11-01"
-  },
-  {
    "payer": "0x7985962fbd185572099c179e0fbe658b0b52d0ff",
-   "share": 0.01670990489315067,
+   "share": 0.016565684569166357,
    "volume_usd": 310.0,
    "payments": 3,
    "first": "2026-03-19",
@@ -229,7 +229,7 @@
   },
   {
    "payer": "0x989ba7486f2edcdc17feeb4a6c2c278529e58d53",
-   "share": 0.01637570679528766,
+   "share": 0.01623437087778303,
    "volume_usd": 303.8,
    "payments": 3,
    "first": "2026-05-12",
@@ -237,14 +237,14 @@
   }
  ],
  "outflows": {
-  "volume_usd": 918031.10266,
-  "transfers": 1242
+  "volume_usd": 919102.37266,
+  "transfers": 1247
  },
  "top_destinations": [
   {
    "address": "0x05f81020bfb3e4c24d1721552be6fe6b45b1ed41",
-   "volume_usd": 559249.0699999998,
-   "transfers": 580
+   "volume_usd": 560217.5099999998,
+   "transfers": 581
   },
   {
    "address": "0x14956d67e85b124bf0abe9be157f32994ac87171",
