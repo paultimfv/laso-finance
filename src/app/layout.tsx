@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import Nav from "@/components/nav";
+import Ask from "@/components/ask";
 import "./globals.css";
 
 // one coding face for everything; JetBrains Mono's tall x-height keeps prose readable at small sizes
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <p className="text-[11px]">Laso stats API, chain data, Solana RPC, CoinGecko. Refreshed hourly.</p>
           </div>
         </footer>
+        <Ask site="laso" title="Laso Finance" suggestions={["What was Laso’s volume over the last 30 days?", "How much revenue has Laso made in total?", "Which chain brings in the most deposits?"]} />
       </body>
     </html>
   );
