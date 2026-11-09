@@ -1,10 +1,11 @@
 // GET /api/ask-context → every dataset on this dashboard as compact text, read by the "Ask AI" assistant.
-import { stats, monthly, trailing, onchain, chainTotals, market, treasuryUsdc, pricing, x402 } from "@/lib/laso";
+import { stats, monthly, trailing, getOnchain, chainTotals, market, treasuryUsdc, pricing, getX402 } from "@/lib/laso";
 import { table, fromJson, contextResponse } from "@/lib/ask-context";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
+  const [onchain, x402] = await Promise.all([getOnchain(), getX402()]);
   const [{ headline, days }, m, tre, prices] = await Promise.all([stats(), market(), treasuryUsdc(), pricing().catch(() => [])]);
   return contextResponse([
     `# Laso Finance dashboard (laso.paultimofeev.com)
@@ -19,7 +20,7 @@ Method: deposits = inbound USDC, USDT, DAI (and bridged USDC) to Laso addresses,
     table("By month", monthly(days) as unknown as Record<string, unknown>[]),
     table("By day (volume, revenue, treasury)", days as unknown as Record<string, unknown>[], { max: 200, cols: ["day", "volume", "revenue", "treasury"] }),
     fromJson("Onchain deposits", onchain, { max: 150 }),
-    fromJson("Deposits by chain", chainTotals()),
+    fromJson("Deposits by chain", chainTotals(onchain)),
     fromJson("x402 payments on Base", x402, { max: 150 }),
     table("Pricing (fees by product and route)", prices as unknown as Record<string, unknown>[]),
   ]);

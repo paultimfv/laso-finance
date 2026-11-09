@@ -1,4 +1,4 @@
-import { stats, monthly, trailing, onchain, chainTotals, CHAIN } from "@/lib/laso";
+import { stats, monthly, trailing, getOnchain, chainTotals, CHAIN } from "@/lib/laso";
 import { Counter, Counters, Card, Panel, Section, Note, StackedBars, StackedColumns, SimpleLine, CategoryBars, Table } from "@/components/charts";
 import { LedgerCard } from "@/components/ledger-card";
 import { fmtUsd, fmtPct } from "@/lib/fmt";
@@ -6,12 +6,13 @@ import { fmtUsd, fmtPct } from "@/lib/fmt";
 export const revalidate = 3600;
 
 export default async function Page() {
+  const onchain = await getOnchain();
   const { headline: h, days } = await stats();
   const months = monthly(days);
   const full = months.slice(0, -1);               // drop the partial current month from monthly charts
   const t30 = trailing(days, 30), t365 = trailing(days, 365);
   const asOf = days[days.length - 1]?.day;
-  const chains = chainTotals();
+  const chains = chainTotals(onchain);
   const addr = onchain.byAddress.slice(0, 12).map((r) => ({ ...r, chain: CHAIN[r.chain] ?? r.chain }));
   const t = onchain.totals;
   const covered = Object.keys(onchain.coverage).map((c) => CHAIN[c] ?? c);
@@ -21,12 +22,12 @@ export default async function Page() {
     <main className="mx-auto max-w-6xl space-y-14 px-4 pb-10 pt-12">
       <header className="grid items-center gap-10 md:grid-cols-[1fr_460px]">
         <div className="space-y-5">
-          <h1 className="text-[clamp(30px,4.6vw,44px)] font-medium leading-[1.05] tracking-[-0.045em] text-ink">Laso Finance</h1>
+          <h1 className="sec-t page-t">Laso Finance</h1>
           <p className="max-w-[56ch] text-[14px] leading-[1.7] text-ink-2">
             Laso turns stablecoins into prepaid cards, gift cards and bank payouts without an ID upload, for people and for AI agents.
             This dashboard tracks the business from Laso&apos;s own ledger and from chain data.
           </p>
-          <div className="font-mono text-[11.5px] text-muted">data as of {asOf}</div>
+          <div className="text-[11.5px] text-muted">Data as of {asOf}</div>
         </div>
         <LedgerCard total={h.totalVolume} volume30={h.thirtyDayVolume} revenue30={t30.revenue} asOf={asOf} />
       </header>
@@ -71,7 +72,7 @@ export default async function Page() {
           ]} />
         </Panel>
         <Note>
-          Pulled {onchain.builtAt} from Blockscout, Alchemy and Helius, with stablecoins counted at $1. Chains: {covered.join(", ")}{missing.length ? `. Not yet loaded: ${missing.join(", ")}` : ""}. Deposits run above the ledger volume because they include
+          Pulled {onchain.builtAt} from Blockscout and Alchemy (refreshed hourly), with stablecoins counted at $1. Chains: {covered.join(", ")}{missing.length ? `. Not yet loaded: ${missing.join(", ")}` : ""}. Deposits run above the ledger volume because they include
           money that sits in account balances before it is spent, and Laso says the onchain count overstates real volume. Read this section for chain mix and
           direction, and the ledger for totals.
         </Note>

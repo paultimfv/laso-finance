@@ -1,4 +1,4 @@
-import { stats, trailing, market, treasuryUsdc, x402 } from "@/lib/laso";
+import { stats, trailing, market, treasuryUsdc, getX402 } from "@/lib/laso";
 import Model, { type ModelInputs } from "@/components/model";
 import { fmtUsd, fmtPct } from "@/lib/fmt";
 import { PageHeader } from "@/components/charts";
@@ -10,6 +10,7 @@ const HIDDEN = true;
 export const revalidate = 3600;
 
 export default async function ModelPage() {
+  const x402 = await getX402();
   if (HIDDEN) notFound();
   const [{ days }, m, tre] = await Promise.all([stats(), market(), treasuryUsdc()]);
   const t30 = trailing(days, 30), t365 = trailing(days, 365);

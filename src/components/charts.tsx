@@ -2,7 +2,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import {
   ResponsiveContainer, AreaChart, Area, BarChart, Bar, Cell, LineChart, Line, ComposedChart,
-  XAxis, YAxis, Tooltip, Legend, CartesianGrid, ReferenceLine,
+  XAxis, YAxis, Tooltip, Legend, CartesianGrid, ReferenceLine, ReferenceDot,
 } from "recharts";
 import { fmtUsd, fmtPct } from "@/lib/fmt";
 
@@ -94,68 +94,62 @@ const fmtDayLong = (d: unknown) => { const s = String(d).slice(0, 10); const m =
 
 /* shared chrome: hairline solid grid, recessive axes, tooltip and legend on text tokens */
 function chrome(pal: Pal, fmt: Fmt, x: string, legend: boolean) {
-  const tick = { fill: pal.axis, fontSize: 10.5, fontFamily: "var(--font-code)" };
+  const tick = { fill: pal.axis, fontSize: 11, fontFamily: "var(--font-num)" };
   return [
-    <CartesianGrid key="g" stroke={pal.grid} vertical={false} />,
-    <XAxis key="x" dataKey={x} tickFormatter={fmtDay} tick={tick} tickLine={false} axisLine={{ stroke: pal.grid }} minTickGap={28} padding={{ right: 8 }} />,
-    <YAxis key="y" tickFormatter={AX[fmt]} width={58} tick={tick} tickLine={false} axisLine={false} />,
-    <Tooltip key="t" cursor={{ stroke: pal.axis, strokeWidth: 1, fill: pal.grid, fillOpacity: 0.4 }}
-      contentStyle={{ background: pal.surface, border: `1px solid ${pal.other}`, borderRadius: 4, fontSize: 12, boxShadow: "0 12px 32px -12px rgba(0,0,0,0.35)" }}
-      labelStyle={{ color: pal.ink, fontWeight: 600, marginBottom: 4 }} itemStyle={{ color: pal.ink2, padding: 0 }}
+    <CartesianGrid key="g" stroke={pal.grid} strokeDasharray="1 3" vertical={false} />,
+    <XAxis key="x" dataKey={x} tickFormatter={fmtDay} tick={tick} tickLine={false} axisLine={{ stroke: pal.ink2 }} minTickGap={36} padding={{ right: 4 }} />,
+    <YAxis key="y" orientation="right" tickFormatter={AX[fmt]} width={56} tick={tick} tickLine={false} axisLine={false} />,
+    <Tooltip key="t" cursor={{ stroke: pal.ink, strokeWidth: 1, fill: pal.grid, fillOpacity: 0.5 }}
+      contentStyle={{ background: pal.ink, border: 0, borderRadius: 2, fontSize: 12, padding: "8px 10px", fontFamily: "var(--font-num)" }}
+      labelStyle={{ color: pal.surface, fontWeight: 600, marginBottom: 4 }} itemStyle={{ color: pal.surface, padding: 0, opacity: 0.85 }}
       formatter={(v, n) => [F[fmt](Number(v)), label(String(n))]} labelFormatter={fmtDayLong} />,
-    legend ? <Legend key="l" iconType="square" iconSize={8} align="left" verticalAlign="top" itemSorter={null} wrapperStyle={{ paddingBottom: 8 }}
-      formatter={(v) => <span style={{ color: pal.ink2, fontSize: 12 }}>{label(String(v))}</span>} /> : null,
+    legend ? <Legend key="l" iconType="rect" iconSize={10} align="left" verticalAlign="top" itemSorter={null} wrapperStyle={{ paddingBottom: 10, marginLeft: -4 }}
+      formatter={(v) => <span style={{ color: pal.ink2, fontSize: 12.5 }}>{label(String(v))}</span>} /> : null,
   ];
 }
 
 export function Counter({ label, value, sub, tone }: { label: string; value: string; sub?: string; tone?: "up" | "down" }) {
   return (
-    <div className="bg-surface px-4 pb-4 pt-3.5">
-      <div className="text-[11.5px] text-muted">{label}</div>
-      <div className={`num mt-2 text-[22px] font-normal leading-none ${tone === "up" ? "text-up" : tone === "down" ? "text-down" : "text-ink"}`}>{value}</div>
-      {sub && <div className="mt-2 text-[11.5px] leading-snug text-muted">{sub}</div>}
+    <div className="stat">
+      <div className="stat-l">{label}</div>
+      <div className={`stat-v ${tone === "up" ? "is-up" : tone === "down" ? "is-down" : ""}`}>{value}</div>
+      {sub && <div className="stat-s">{sub}</div>}
     </div>
   );
 }
 
 /** a row of counters sharing hairline dividers */
 export function Counters({ cols = "md:grid-cols-3 lg:grid-cols-6", children }: { cols?: string; children: React.ReactNode }) {
-  return <div className={`grid grid-cols-2 gap-px overflow-hidden rounded-[4px] border border-line bg-line ${cols}`}>{children}</div>;
+  return <div className={`stats grid grid-cols-2 ${cols}`}>{children}</div>;
 }
 
 export function Card({ title, sub, children, tall, wide, tone }: { title: string; sub?: string; children: React.ReactNode; tall?: boolean; wide?: boolean; tone?: Tone }) {
   if (tone) return <ToneScope tone={tone}><Card title={title} sub={sub} tall={tall} wide={wide}>{children}</Card></ToneScope>;
   return (
-    <div className={`rounded-[4px] border border-line bg-surface px-4 pb-3 pt-3.5 ${wide ? "md:col-span-2" : ""}`}>
-      <div className="mb-3">
-        <div className="text-[13px] font-medium tracking-[-0.01em] text-ink">{title}</div>
-        {sub && <div className="mt-0.5 text-[11.5px] text-muted">{sub}</div>}
-      </div>
+    <figure className={`fig ${wide ? "md:col-span-2" : ""}`}>
+      <figcaption className="fig-h"><span className="fig-t">{title}</span>{sub && <span className="fig-s">{sub}</span>}</figcaption>
       <div className={tall ? "h-80" : "h-60"}>{children}</div>
-    </div>
+    </figure>
   );
 }
 
 export function Panel({ title, sub, children }: { title: string; sub?: string; children: React.ReactNode }) {
   return (
-    <div className="rounded-[4px] border border-line bg-surface p-4">
-      <div className="mb-3">
-        <div className="text-[13.5px] font-medium text-ink">{title}</div>
-        {sub && <div className="mt-0.5 text-[12px] text-muted">{sub}</div>}
-      </div>
+    <div className="fig">
+      <div className="fig-h"><span className="fig-t">{title}</span>{sub && <span className="fig-s">{sub}</span>}</div>
       {children}
     </div>
   );
 }
 
-export function Section({ title, lede, tone = "maple", children }: { n?: string; title: string; lede?: string; tone?: Tone; children: React.ReactNode }) {
+export function Section({ n, title, lede, tone = "maple", children }: { n?: string; title: string; lede?: string; tone?: Tone; children: React.ReactNode }) {
   return (
     <ToneScope tone={tone}>
-    <section className="space-y-5">
-      <div className="space-y-2 border-t border-line pt-6">
-        <h2 className="text-[18px] font-medium tracking-[-0.03em] text-ink">{title}</h2>
-        {lede && <p className="max-w-[72ch] text-[13px] leading-[1.7] text-ink-2">{lede}</p>}
-      </div>
+    <section className={`sec space-y-6 ${tone === "rh" ? "sec-rh" : ""}`} data-n={n}>
+      <header className="sec-h">
+        <h2 className="sec-t">{title}</h2>
+        {lede && <p className="sec-l">{lede}</p>}
+      </header>
       {children}
     </section>
     </ToneScope>
@@ -166,7 +160,15 @@ export function Note({ children }: { children: React.ReactNode }) {
   return <p className="max-w-[80ch] text-[11.5px] leading-[1.7] text-muted">{children}</p>;
 }
 
-const M = { top: 4, right: 14, left: 0, bottom: 0 };
+/** the latest point, dotted and labelled, so the current value reads without hovering */
+function endMark(pal: Pal, data: Row[], x: string, y: string, fmt: Fmt) {
+  const last = [...data].reverse().find((r) => r[y] != null && isFinite(Number(r[y])));
+  if (!last) return null;
+  return <ReferenceDot key="end" x={last[x] as string} y={Number(last[y])} r={3.5} fill={pal.series[0]} stroke={pal.surface} strokeWidth={2} ifOverflow="visible"
+    label={{ value: F[fmt](Number(last[y])), position: "left", offset: 10, fill: pal.ink, fontSize: 12, fontWeight: 600, fontFamily: "var(--font-num)" }} />;
+}
+
+const M = { top: 8, right: 0, left: 0, bottom: 0 };
 /** past this many x points, bars get thinner than their gap; stacks switch to stacked areas */
 const DENSE = 60;
 
@@ -275,6 +277,7 @@ export function SimpleArea({ data, x, y, fmt = "usd" }: { data: Row[]; x: string
     <ResponsiveContainer>
       <AreaChart data={data} margin={M}>
         {chrome(pal, fmt, x, false)}
+        {endMark(pal, data, x, y, fmt)}
         <Area dataKey={y} stroke={pal.series[0]} strokeWidth={2} fill={pal.series[0]} fillOpacity={0.1} isAnimationActive={false} />
       </AreaChart>
     </ResponsiveContainer>
@@ -289,7 +292,8 @@ export function SimpleLine({ data, x, ys, fmt = "pct" }: { data: Row[]; x: strin
       <ResponsiveContainer>
         <AreaChart data={data} margin={M}>
           {chrome(pal, fmt, x, false)}
-          <Area dataKey={ys[0]} stroke={pal.series[0]} strokeWidth={2} fill={pal.series[0]} fillOpacity={0.08} dot={false}
+          {endMark(pal, data, x, ys[0], fmt)}
+          <Area dataKey={ys[0]} stroke={pal.series[0]} strokeWidth={2} fill={pal.series[0]} fillOpacity={0.06} dot={false}
             activeDot={{ r: 4, stroke: pal.surface, strokeWidth: 2 }} isAnimationActive={false} />
         </AreaChart>
       </ResponsiveContainer>
@@ -371,12 +375,12 @@ export function StackedBarsWithLines({ data, x, ys, lines, fmt = "usd" }: { data
 /** page title block: title and one-paragraph description on the left, data date on the right */
 export function PageHeader({ title, children, asOf }: { title: string; children?: React.ReactNode; asOf?: string }) {
   return (
-    <header className="flex flex-wrap items-end justify-between gap-x-10 gap-y-3 pb-2">
-      <div className="space-y-3">
-        <h1 className="text-[32px] font-medium leading-[1.05] tracking-[-0.045em] text-ink">{title}</h1>
-        {children && <p className="max-w-[68ch] text-[13.5px] leading-[1.7] text-ink-2">{children}</p>}
+    <header className="sec-h">
+      <h1 className="sec-t page-t">{title}</h1>
+      <div>
+        {children && <p className="sec-l">{children}</p>}
+        {asOf && <p className="mt-3 text-[11.5px] text-muted">Data as of {asOf}</p>}
       </div>
-      {asOf && <div className="font-mono text-[11.5px] text-muted">data as of {asOf}</div>}
     </header>
   );
 }

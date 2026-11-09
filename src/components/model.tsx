@@ -68,25 +68,27 @@ export default function Model({ inp }: { inp: ModelInputs }) {
 
   return (
     <div className="grid gap-8">
-      <div className="grid gap-px overflow-hidden rounded-[4px] border border-line bg-line md:grid-cols-[1.3fr_1fr_1fr_1fr]">
-        <div className="bg-surface p-5">
-          <div className="text-[12px] text-muted">LASO price in 12 months</div>
-          <div className="num mt-2 text-[48px] font-light leading-none text-ink">${r.price.toFixed(3)}</div>
+      <div className="grid items-end gap-x-10 gap-y-6 md:grid-cols-[minmax(0,4fr)_minmax(0,8fr)]">
+        <div>
+          <div className="text-[13px] text-ink-2">LASO price in 12 months</div>
+          <div className="num mt-2 text-[clamp(56px,8vw,96px)] font-light leading-[0.9] tracking-[-0.06em] text-ink">${r.price.toFixed(3)}</div>
           <div className={`mt-1 text-sm ${mult >= 1 ? "text-up" : "text-down"}`}>{mult.toFixed(2)}x today&apos;s ${inp.price.toFixed(4)}</div>
         </div>
+        <div className="stats grid grid-cols-3">
         {[["Implied FDV", usd(r.fdv), `${p.multiple.toFixed(1)}x forward revenue + treasury`],
           ["Revenue, next 12 months", usd(r.first12), `then ${usd(r.next12)} in months 13–24`],
           ["Treasury in 12 months", usd(r.treasury12), r.runway ? `runs out in month ${r.runway}` : "never runs out in 24 months"]].map(([l, v, s]) => (
-          <div key={l} className="bg-surface p-5">
-            <div className="text-[12px] text-muted">{l}</div>
-            <div className="num mt-2 text-[24px] leading-none text-ink">{v}</div>
-            <div className={`mt-1 text-xs ${l.startsWith("Treasury") && r.runway ? "text-down" : "text-muted"}`}>{s}</div>
+          <div key={l} className="stat">
+            <div className="stat-l">{l}</div>
+            <div className="stat-v">{v}</div>
+            <div className={`stat-s ${l.startsWith("Treasury") && r.runway ? "text-down!" : ""}`}>{s}</div>
           </div>
         ))}
+        </div>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[340px_1fr]">
-        <div className="grid content-start gap-5 rounded-[4px] border border-line bg-surface p-5">
+        <div className="grid content-start gap-5 self-start rounded-[2px] border-t-2 border-ink bg-surface p-5">
           <div className="flex flex-wrap gap-2">
             <button onClick={() => setP(base)} className="rounded-[4px] border border-line-strong px-3 py-1.5 text-[13px] text-ink hover:border-accent hover:text-accent-ink">Today&apos;s run-rate</button>
           </div>
@@ -105,8 +107,8 @@ export default function Model({ inp }: { inp: ModelInputs }) {
         </div>
 
         <div className="grid content-start gap-4">
-          <div className="rounded-[4px] border border-line bg-surface p-4">
-            <div className="mb-2 text-[13px] font-medium text-ink">Monthly revenue</div>
+          <div className="fig">
+            <div className="fig-t mb-3 block">Monthly revenue</div>
             <div className="h-64">
               <ResponsiveContainer>
                 <BarChart data={r.rows.map((x) => ({ m: x.m, human: x.human * p.take, agents: x.agent * p.take }))} margin={{ top: 4, right: 14, left: 0, bottom: 0 }}>
@@ -122,8 +124,8 @@ export default function Model({ inp }: { inp: ModelInputs }) {
               </ResponsiveContainer>
             </div>
           </div>
-          <div className="rounded-[4px] border border-line bg-surface p-4">
-            <div className="mb-2 text-[13px] font-medium text-ink">Treasury USDC</div>
+          <div className="fig">
+            <div className="fig-t mb-3 block">Treasury USDC</div>
             <div className="h-56">
               <ResponsiveContainer>
                 <LineChart data={r.rows} margin={{ top: 4, right: 14, left: 0, bottom: 0 }}>

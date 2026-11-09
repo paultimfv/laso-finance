@@ -38,8 +38,8 @@ export default function Nav() {
       <div className="mx-auto flex max-w-6xl items-center gap-8 px-4">
         <Link href="/" className="flex shrink-0 items-center gap-2.5 py-3.5" aria-label="Laso research, home">
           <span className="mark" aria-hidden />
-          <span className="font-mono text-[17px] font-light tracking-[0.02em] text-ink">laso</span>
-          <span className="font-mono text-[11px] text-muted">/ research</span>
+          <span className="text-[17px] font-light tracking-[0.02em] text-ink">laso</span>
+          <span className="text-[11px] text-muted">/ research</span>
         </Link>
         <div className="flex min-w-0 gap-6 overflow-x-auto whitespace-nowrap text-[13px]">
           {nav.map((n) => {

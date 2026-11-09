@@ -4,7 +4,8 @@
    3. Treasury USDC balance (Solana RPC)
    4. Every stablecoin transfer into Laso's deposit addresses, pulled from chain sources by
       scripts/pull_deposits.py and rolled up by scripts/build_deposits.py into src/data/deposits.json */
-import deposits from "@/data/deposits.json";
+import depositsFallback from "@/data/deposits.json";
+import x402Fallback from "@/data/x402.json";
 
 const HOUR = 3600;
 const FN = "https://us-central1-kyc-ts.cloudfunctions.net";
@@ -94,7 +95,18 @@ export async function treasuryUsdc(): Promise<number | null> {
 /* ---------- Deposits onchain (our pull; stablecoins counted at $1) ---------- */
 export const CHAIN: Record<string, string> = { ethereum: "Ethereum", solana: "Solana", polygon: "Polygon", arbitrum: "Arbitrum", base: "Base", bnb: "BNB", optimism: "Optimism", stellar: "Stellar" };
 
-export const onchain = {
+/* The onchain data files live in the GitHub repo (the hourly workflow commits them), so the site reads them straight
+   from there and re-checks every 5 minutes: fresh data with no redeploy. The copies bundled at build time are the fallback. */
+const RAW = "https://raw.githubusercontent.com/paultimfv/laso-finance/main/src/data/";
+async function fromRepo<T>(file: string, fallback: T, ok: (d: T) => boolean): Promise<T> {
+  try {
+    const r = await fetch(RAW + file, { next: { revalidate: 300 } });
+    if (r.ok) { const d = (await r.json()) as T; if (ok(d)) return d; }
+  } catch {}
+  return fallback;
+}
+
+const shape = (deposits: typeof depositsFallback) => ({
   builtAt: deposits.built_at,
   coverage: deposits.coverage as Record<string, string>,
   totals: deposits.totals,
@@ -104,10 +116,14 @@ export const onchain = {
   volumeSince2024: deposits.volume_since_2024,
   volume30d: deposits.volume_30d,
   solanaSweeps: deposits.solana_sweeps,
-};
+});
+export type Onchain = ReturnType<typeof shape>;
+export async function getOnchain(): Promise<Onchain> {
+  return shape(await fromRepo("deposits.json", depositsFallback, (d) => Boolean(d?.totals && d?.by_address?.length)));
+}
 
 /** all-time volume by chain from the address table */
-export function chainTotals() {
+export function chainTotals(onchain: Onchain) {
   const m = new Map<string, number>();
   for (const r of onchain.byAddress) m.set(r.chain, (m.get(r.chain) ?? 0) + r.volume_usd);
   const total = [...m.values()].reduce((a, b) => a + b, 0);
@@ -124,6 +140,8 @@ export async function pricing(): Promise<Price[]> {
 }
 
 /* ---------- x402 payments to Laso's main Base address (scripts/pull_x402.py → build_x402.py) ---------- */
-import x402Data from "@/data/x402.json";
-export const x402 = x402Data;
+export type X402 = typeof x402Fallback;
+export async function getX402(): Promise<X402> {
+  return fromRepo("x402.json", x402Fallback, (d) => Boolean(d?.x402 && d?.monthly?.length));
+}
 export const LASO_BASE = "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37";

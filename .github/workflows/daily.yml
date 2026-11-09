@@ -1,7 +1,7 @@
-name: daily refresh
+name: hourly refresh
 on:
   schedule:
-    - cron: "45 6 * * *"     # 06:45 UTC
+    - cron: "40 * * * *"     # hourly, :40 past
   workflow_dispatch:
 concurrency: daily
 permissions:
@@ -19,17 +19,16 @@ jobs:
         env:
           RPC_URL: ${{ secrets.RPC_URL }}
           BLOCKSCOUT_KEY: ${{ secrets.BLOCKSCOUT_KEY }}
-          HELIUS_KEY: ${{ secrets.HELIUS_KEY }}
         run: |
           python -u pull_deposits.py ethereum arbitrum optimism base polygon bnb solana | grep -v "so far"
           python -u pull_x402.py
           python build_deposits.py
           python build_x402.py
-      # the push redeploys the site (Vercel is connected to this repo)
+      # the site reads src/data straight from this repo (re-checked every 5 min), so a push is enough: no redeploy
       - name: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
           git add data/raw src/data
-          git diff --cached --quiet || git commit -m "data: daily refresh $(date -u +%F)"
+          git diff --cached --quiet || git commit -m "data: refresh $(date -u +%FT%H:%MZ)"
           git push

@@ -11,8 +11,8 @@ Live: https://laso-finance.vercel.app
 | Volume, revenue, spenders | Laso public stats API | hourly |
 | LASO price, supply | CoinGecko | hourly |
 | Treasury USDC | Solana RPC | hourly |
-| Stablecoin deposits, 7 chains | Blockscout (Ethereum, Arbitrum, Optimism), Alchemy (Base, Polygon, BNB), Helius (Solana) | daily |
-| x402 payments, Base | Alchemy | daily |
+| Stablecoin deposits, 7 chains | Blockscout (Ethereum, Arbitrum, Optimism), Alchemy (Base, Polygon, BNB, Solana) | hourly |
+| x402 payments, Base | Alchemy | hourly |
 
 ## Method
 

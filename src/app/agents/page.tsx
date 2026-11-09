@@ -1,10 +1,11 @@
-import { stats, trailing, x402, onchain, LASO_BASE } from "@/lib/laso";
+import { stats, trailing, getX402, getOnchain, LASO_BASE } from "@/lib/laso";
 import { Counter, Counters, Card, Panel, Section, Note, PageHeader, StackedBars, Table } from "@/components/charts";
 import { fmtUsd, fmtPct } from "@/lib/fmt";
 
 export const revalidate = 3600;
 
 export default async function AgentsPage() {
+  const [x402, onchain] = await Promise.all([getX402(), getOnchain()]);
   const { days } = await stats();
   const ledger30 = trailing(days, 30).volume;
   const x = x402.x402, r = x402.x402_30d;

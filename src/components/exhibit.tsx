@@ -124,15 +124,15 @@ export function Exhibit({ id, n, title, lede, source }: { id: keyof typeof SPECS
     document.fonts?.ready.then(go);   // re-measure label boxes once the fonts have loaded
   }, [id, pal, dark]);
   return (
-    <figure className="m-0 overflow-hidden rounded-[4px] border border-line bg-surface">
-      <figcaption className="px-4 pt-4">
+    <figure className="fig overflow-hidden">
+      <figcaption className="mb-3">
         <div className="text-[13.5px] font-medium text-ink"><span className="mr-2 font-mono text-[12px] text-accent-ink">Exhibit {n}</span>{title}</div>
         {lede && <div className="mt-1 max-w-[68ch] text-[12px] leading-relaxed text-muted">{lede}</div>}
       </figcaption>
       <div className="overflow-x-auto">
-        <svg ref={ref} viewBox={`0 0 760 ${HEIGHT[id]}`} role="img" aria-label={title} className="mx-auto block h-auto max-h-[calc(100svh-150px)] w-full px-3 pb-1 pt-2" />
+        <svg ref={ref} viewBox={`0 0 760 ${HEIGHT[id]}`} role="img" aria-label={title} className="mx-auto block h-auto max-h-[calc(100svh-150px)] w-full rounded-[4px] bg-surface px-3 pb-1 pt-2" />
       </div>
-      <div className="mx-4 flex justify-between gap-4 border-t border-line py-2.5 font-mono text-[11px] text-muted">
+      <div className="flex justify-between gap-4 py-2.5 text-[11px] text-muted">
         <span>Source: {source}</span><span>@ptimfv</span>
       </div>
     </figure>

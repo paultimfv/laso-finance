@@ -198,12 +198,27 @@ def alchemy(chain):
     write(chain, old + rows)
 
 
-# ---------- Solana (Helius parsed-transactions API, per token account) ----------
+# ---------- Solana (Alchemy getTransactionsForAddress, jsonParsed, per token account) ----------
+# Was Helius's parsed-transactions API; moved to Alchemy in Nov 2026 when the Helius plan ran out of credits.
 SOL_RPC = os.environ.get("RPC_URL", "").replace("eth-mainnet", "solana-mainnet") or "https://api.mainnet-beta.solana.com"
 
 
+def _transfers_to(tx, token_account):
+    """SPL token transfers into token_account in a jsonParsed tx (top-level and inner instructions)."""
+    msg, meta = tx["transaction"]["message"], tx.get("meta") or {}
+    ixs = list(msg.get("instructions", [])) + [ix for inner in meta.get("innerInstructions") or [] for ix in inner["instructions"]]
+    for ix in ixs:
+        p = ix.get("parsed")
+        if ix.get("program") != "spl-token" or not isinstance(p, dict) or p.get("type") not in ("transfer", "transferChecked"):
+            continue
+        info = p["info"]
+        if info.get("destination") != token_account:
+            continue
+        raw = info.get("amount") or (info.get("tokenAmount") or {}).get("amount")
+        yield int(raw), info.get("authority") or info.get("multisigAuthority"), info.get("source")
+
+
 def solana(_chain="solana"):
-    key = os.environ["HELIUS_KEY"]
     rows, old, since_by = [], load("solana"), {}
     for owner in SOLANA:
         accts = post(SOL_RPC, {"jsonrpc": "2.0", "id": 1, "method": "getTokenAccountsByOwner",
@@ -212,30 +227,35 @@ def solana(_chain="solana"):
             mint = a["account"]["data"]["parsed"]["info"]["mint"]
             if mint not in TOKENS["solana"]:
                 continue
-            sym, _ = TOKENS["solana"][mint]
+            sym, dec = TOKENS["solana"][mint]
             if (owner, sym) not in since_by:  # an owner can hold more than one account per mint; split once
                 since_by[owner, sym], old = resume(old, lambda r: r["address"] == owner and r["token"] == sym, "ts")
-            since = since_by[owner, sym]
-            before, n = None, 0
+            since, token, n = since_by[owner, sym], None, 0
             while True:
-                page = get(f"https://api.helius.xyz/v0/addresses/{a['pubkey']}/transactions?api-key={key}&limit=100" + (f"&before={before}" if before else ""))
-                if not page:
-                    break
+                opts = {"transactionDetails": "full", "limit": 100, "sortOrder": "asc", "encoding": "jsonParsed",
+                        "maxSupportedTransactionVersion": 1, "filters": {"blockTime": {"gte": int(since)}, "status": "succeeded"}}
+                if token:
+                    opts["paginationToken"] = token
+                resp = post(SOL_RPC, {"jsonrpc": "2.0", "id": 1, "method": "getTransactionsForAddress", "params": [a["pubkey"], opts]})
+                if "error" in resp:
+                    raise RuntimeError(f"solana {a['pubkey']}: {resp['error']}")
+                res = resp["result"]
+                page = res.get("data") or []
                 for tx in page:
-                    if tx.get("transactionError") or tx["timestamp"] < since:
-                        continue
-                    for t in tx.get("tokenTransfers") or []:
-                        if t["mint"] != mint or t["toUserAccount"] != owner or t["fromUserAccount"] in SOLANA:
+                    keys = tx["transaction"]["message"]["accountKeys"]
+                    payer = keys[0]["pubkey"] if isinstance(keys[0], dict) else keys[0]
+                    sig = tx["transaction"]["signatures"][0]
+                    for amt, sender, _src in _transfers_to(tx, a["pubkey"]):
+                        if sender in SOLANA:
                             continue
-                        rows.append({"chain": "solana", "address": owner, "token": sym, "amount": float(t["tokenAmount"]),
-                                     "sender": t["fromUserAccount"], "tx": tx["signature"], "block": tx["slot"], "ts": tx["timestamp"], "fee_payer": tx.get("feePayer")})
+                        rows.append({"chain": "solana", "address": owner, "token": sym, "amount": amt / 10 ** dec,
+                                     "sender": sender, "tx": sig, "block": tx["slot"], "ts": tx["blockTime"], "fee_payer": payer})
                 n += len(page)
-                before = page[-1]["signature"]
-                if page[-1]["timestamp"] < since:  # pages run newest first; we're past what's on file
+                token = res.get("paginationToken")
+                if not token or not page:
                     break
             print(f"  solana {owner[:6]} {sym}: {n:,} transactions read, {len(rows):,} new deposits so far", flush=True)
     write("solana", old + rows)
-
 
 if __name__ == "__main__":
     for chain in sys.argv[1:]:
