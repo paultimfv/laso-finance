@@ -13,7 +13,7 @@
   "payments": 483,
   "payers": 82
  },
- "other_in_usd": 457609.587646,
+ "other_in_usd": 457788.357646,
  "monthly": [
   {
    "month": "2025-01-01",
@@ -150,7 +150,7 @@
   {
    "month": "2026-11-01",
    "x402_usd": 836.9309999999977,
-   "transfer_usd": 6012.446392,
+   "transfer_usd": 6191.216392,
    "x402_payments": 146
   }
  ],
