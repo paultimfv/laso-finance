@@ -13,7 +13,7 @@
   "payments": 486,
   "payers": 82
  },
- "other_in_usd": 457788.357646,
+ "other_in_usd": 458288.057419,
  "monthly": [
   {
    "month": "2025-01-01",
@@ -150,7 +150,7 @@
   {
    "month": "2026-11-01",
    "x402_usd": 836.9339999999976,
-   "transfer_usd": 6191.216392,
+   "transfer_usd": 6690.916165000001,
    "x402_payments": 149
   }
  ],
@@ -237,8 +237,8 @@
   }
  ],
  "outflows": {
-  "volume_usd": 924187.506789,
-  "transfers": 1259
+  "volume_usd": 924731.906789,
+  "transfers": 1261
  },
  "top_destinations": [
   {
