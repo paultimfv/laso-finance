@@ -10,8 +10,8 @@
   "solana": "2026-11-11"
  },
  "totals": {
-  "volume_usd": 32306053.786478914,
-  "deposits": 93336,
+  "volume_usd": 32306160.786478914,
+  "deposits": 93337,
   "senders": 24100
  },
  "by_address": [
@@ -28,8 +28,8 @@
    "address": "3MZVk97x9SeRxbYpc3jhzRfU2fyA3emYutnqfn9kNfYX",
    "chain": "solana",
    "flow": "Account balance (Solana) + agent sweeps",
-   "volume_usd": 5149144.362200973,
-   "deposits": 12800,
+   "volume_usd": 5149251.362200973,
+   "deposits": 12801,
    "first": "2024-01-06",
    "last": "2026-11-11"
   },
@@ -1613,17 +1613,17 @@
   {
    "month": "2026-11-01",
    "chain": "solana",
-   "volume_usd": 248756.35138900008
+   "volume_usd": 248863.35138900008
   }
  ],
- "volume_since_2024": 30797880.196562614,
- "volume_30d": 1095096.0320706116,
+ "volume_since_2024": 30797987.196562614,
+ "volume_30d": 1089814.6173616115,
  "solana_sweeps": {
-  "volume_usd": 1457820.517539,
-  "deposits": 3967,
+  "volume_usd": 1457927.517539,
+  "deposits": 3968,
   "addresses": 1103,
-  "volume_30d": 237927.918424,
-  "deposits_30d": 677,
+  "volume_30d": 237977.175723,
+  "deposits_30d": 676,
   "addresses_30d": 284,
   "monthly": [
    {
@@ -1678,8 +1678,8 @@
    },
    {
     "month": "2026-11-01",
-    "volume_usd": 84066.468221,
-    "deposits": 206
+    "volume_usd": 84173.468221,
+    "deposits": 207
    }
   ]
  },
