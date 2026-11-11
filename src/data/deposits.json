@@ -10,9 +10,9 @@
   "solana": "2026-11-11"
  },
  "totals": {
-  "volume_usd": 32299064.677584916,
-  "deposits": 93316,
-  "senders": 24095
+  "volume_usd": 32299690.457584914,
+  "deposits": 93319,
+  "senders": 24096
  },
  "by_address": [
   {
@@ -28,8 +28,8 @@
    "address": "3MZVk97x9SeRxbYpc3jhzRfU2fyA3emYutnqfn9kNfYX",
    "chain": "solana",
    "flow": "Account balance (Solana) + agent sweeps",
-   "volume_usd": 5146415.575914973,
-   "deposits": 12789,
+   "volume_usd": 5146636.315914973,
+   "deposits": 12791,
    "first": "2024-01-06",
    "last": "2026-11-11"
   },
@@ -127,10 +127,10 @@
    "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
    "chain": "bnb",
    "flow": "Account balance (ETH + BNB)",
-   "volume_usd": 433537.5859237692,
-   "deposits": 2502,
+   "volume_usd": 433942.6259237692,
+   "deposits": 2503,
    "first": "2025-01-28",
-   "last": "2026-11-07"
+   "last": "2026-11-11"
   },
   {
    "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
@@ -1593,7 +1593,7 @@
   {
    "month": "2026-11-01",
    "chain": "bnb",
-   "volume_usd": 13111.820000000002
+   "volume_usd": 13516.860000000002
   },
   {
    "month": "2026-11-01",
@@ -1613,18 +1613,18 @@
   {
    "month": "2026-11-01",
    "chain": "solana",
-   "volume_usd": 246027.56510300006
+   "volume_usd": 246248.30510300008
   }
  ],
- "volume_since_2024": 30790891.087668613,
- "volume_30d": 1096204.2058146116,
+ "volume_since_2024": 30791516.867668614,
+ "volume_30d": 1096687.0545006115,
  "solana_sweeps": {
-  "volume_usd": 1455205.861253,
-  "deposits": 3958,
+  "volume_usd": 1455421.461253,
+  "deposits": 3959,
   "addresses": 1101,
-  "volume_30d": 238015.688347,
-  "deposits_30d": 682,
-  "addresses_30d": 284,
+  "volume_30d": 238088.357033,
+  "deposits_30d": 676,
+  "addresses_30d": 283,
   "monthly": [
    {
     "month": "2026-01-01",
@@ -1678,8 +1678,8 @@
    },
    {
     "month": "2026-11-01",
-    "volume_usd": 81451.81193499999,
-    "deposits": 197
+    "volume_usd": 81667.411935,
+    "deposits": 198
    }
   ]
  },
