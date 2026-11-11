@@ -10,9 +10,9 @@
   "solana": "2026-11-11"
  },
  "totals": {
-  "volume_usd": 32299690.457584914,
-  "deposits": 93319,
-  "senders": 24096
+  "volume_usd": 32299900.375103913,
+  "deposits": 93321,
+  "senders": 24097
  },
  "by_address": [
   {
@@ -82,8 +82,8 @@
    "address": "0x76630b66b0cf7858186dc7031ad1e7e29a13168c",
    "chain": "arbitrum",
    "flow": "Account balance (Arbitrum) + BTC swap treasury",
-   "volume_usd": 706320.9683541015,
-   "deposits": 2259,
+   "volume_usd": 706405.8858731015,
+   "deposits": 2260,
    "first": "2023-12-06",
    "last": "2026-11-11"
   },
@@ -127,8 +127,8 @@
    "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
    "chain": "bnb",
    "flow": "Account balance (ETH + BNB)",
-   "volume_usd": 433942.6259237692,
-   "deposits": 2503,
+   "volume_usd": 434067.6259237692,
+   "deposits": 2504,
    "first": "2025-01-28",
    "last": "2026-11-11"
   },
@@ -1583,7 +1583,7 @@
   {
    "month": "2026-11-01",
    "chain": "arbitrum",
-   "volume_usd": 35154.47046
+   "volume_usd": 35239.387979
   },
   {
    "month": "2026-11-01",
@@ -1593,7 +1593,7 @@
   {
    "month": "2026-11-01",
    "chain": "bnb",
-   "volume_usd": 13516.860000000002
+   "volume_usd": 13641.860000000002
   },
   {
    "month": "2026-11-01",
@@ -1616,8 +1616,8 @@
    "volume_usd": 246248.30510300008
   }
  ],
- "volume_since_2024": 30791516.867668614,
- "volume_30d": 1096687.0545006115,
+ "volume_since_2024": 30791726.785187613,
+ "volume_30d": 1096896.9720196116,
  "solana_sweeps": {
   "volume_usd": 1455421.461253,
   "deposits": 3959,
