@@ -9,11 +9,11 @@
   "avg_usd": 9.79275155925156
  },
  "x402_30d": {
-  "volume_usd": 2172.782,
-  "payments": 485,
+  "volume_usd": 2141.782,
+  "payments": 484,
   "payers": 81
  },
- "other_in_usd": 458288.057419,
+ "other_in_usd": 458338.057419,
  "monthly": [
   {
    "month": "2025-01-01",
@@ -150,7 +150,7 @@
   {
    "month": "2026-11-01",
    "x402_usd": 836.9359999999975,
-   "transfer_usd": 6690.916165000001,
+   "transfer_usd": 6740.916165000001,
    "x402_payments": 151
   }
  ],
