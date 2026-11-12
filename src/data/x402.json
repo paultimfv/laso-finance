@@ -237,14 +237,14 @@
   }
  ],
  "outflows": {
-  "volume_usd": 924731.906789,
-  "transfers": 1261
+  "volume_usd": 925013.006789,
+  "transfers": 1262
  },
  "top_destinations": [
   {
    "address": "0x05f81020bfb3e4c24d1721552be6fe6b45b1ed41",
-   "volume_usd": 564167.9241289998,
-   "transfers": 584
+   "volume_usd": 564449.0241289998,
+   "transfers": 585
   },
   {
    "address": "0x14956d67e85b124bf0abe9be157f32994ac87171",
