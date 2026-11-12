@@ -10,8 +10,8 @@
   "solana": "2026-11-12"
  },
  "totals": {
-  "volume_usd": 32384834.991029914,
-  "deposits": 93377,
+  "volume_usd": 32386120.991029914,
+  "deposits": 93380,
   "senders": 24111
  },
  "by_address": [
@@ -19,8 +19,8 @@
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "ethereum",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 8211034.166316723,
-   "deposits": 20140,
+   "volume_usd": 8212185.166316723,
+   "deposits": 20142,
    "first": "2022-08-05",
    "last": "2026-11-12"
   },
@@ -118,8 +118,8 @@
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "base",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 479363.5615010105,
-   "deposits": 2130,
+   "volume_usd": 479498.5615010105,
+   "deposits": 2131,
    "first": "2024-03-22",
    "last": "2026-11-12"
   },
@@ -1588,7 +1588,7 @@
   {
    "month": "2026-11-01",
    "chain": "base",
-   "volume_usd": 8656.776165000001
+   "volume_usd": 8791.776165000001
   },
   {
    "month": "2026-11-01",
@@ -1598,7 +1598,7 @@
   {
    "month": "2026-11-01",
    "chain": "ethereum",
-   "volume_usd": 118197.33857146012
+   "volume_usd": 119348.33857146012
   },
   {
    "month": "2026-11-01",
@@ -1616,15 +1616,15 @@
    "volume_usd": 313633.3819450001
   }
  ],
- "volume_since_2024": 30876661.401113614,
- "volume_30d": 1088128.6073836116,
+ "volume_since_2024": 30877947.401113614,
+ "volume_30d": 1089394.6073836116,
  "solana_sweeps": {
   "volume_usd": 1469570.742717,
   "deposits": 3986,
   "addresses": 1107,
-  "volume_30d": 242293.711101,
-  "deposits_30d": 669,
-  "addresses_30d": 282,
+  "volume_30d": 242273.711101,
+  "deposits_30d": 668,
+  "addresses_30d": 281,
   "monthly": [
    {
     "month": "2026-01-01",
@@ -1711,8 +1711,8 @@
   {
    "sender": "0x110077460258d8c409ee9c4c6f01b2229f9bc7d7",
    "chain": "ethereum",
-   "volume_usd": 313616.23999999993,
-   "deposits": 273
+   "volume_usd": 314767.23999999993,
+   "deposits": 275
   },
   {
    "sender": "DPqsobysNf5iA9w7zrQM8HLzCKZEDMkZsWbiidsAt1xo",
