@@ -5,14 +5,14 @@
   "arbitrum": "2026-11-13",
   "optimism": "2026-11-13",
   "base": "2026-11-14",
-  "polygon": "2026-11-13",
+  "polygon": "2026-11-14",
   "bnb": "2026-11-14",
   "solana": "2026-11-14"
  },
  "totals": {
-  "volume_usd": 32450280.541392915,
-  "deposits": 93466,
-  "senders": 24127
+  "volume_usd": 32451028.543392915,
+  "deposits": 93471,
+  "senders": 24128
  },
  "by_address": [
   {
@@ -28,8 +28,8 @@
    "address": "3MZVk97x9SeRxbYpc3jhzRfU2fyA3emYutnqfn9kNfYX",
    "chain": "solana",
    "flow": "Account balance (Solana) + agent sweeps",
-   "volume_usd": 5208942.329968974,
-   "deposits": 12865,
+   "volume_usd": 5209492.331968974,
+   "deposits": 12869,
    "first": "2024-01-06",
    "last": "2026-11-14"
   },
@@ -109,10 +109,10 @@
    "address": "0x8cbc98d51a8fcd83fe366acf96c55ad22e8bb95c",
    "chain": "polygon",
    "flow": "Account balance (Polygon)",
-   "volume_usd": 565656.0108705562,
-   "deposits": 2591,
+   "volume_usd": 565854.0108705562,
+   "deposits": 2592,
    "first": "2023-11-28",
-   "last": "2026-11-13"
+   "last": "2026-11-14"
   },
   {
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
@@ -1608,23 +1608,23 @@
   {
    "month": "2026-11-01",
    "chain": "polygon",
-   "volume_usd": 4039.39
+   "volume_usd": 4237.389999999999
   },
   {
    "month": "2026-11-01",
    "chain": "solana",
-   "volume_usd": 353430.233337
+   "volume_usd": 353980.235337
   }
  ],
- "volume_since_2024": 30942106.95147661,
- "volume_30d": 1089706.7731296115,
+ "volume_since_2024": 30942854.95347661,
+ "volume_30d": 1090454.7751296116,
  "solana_sweeps": {
-  "volume_usd": 1487441.274109,
-  "deposits": 4032,
-  "addresses": 1117,
-  "volume_30d": 238033.319076,
-  "deposits_30d": 656,
-  "addresses_30d": 282,
+  "volume_usd": 1487991.276109,
+  "deposits": 4036,
+  "addresses": 1118,
+  "volume_30d": 238583.321076,
+  "deposits_30d": 660,
+  "addresses_30d": 284,
   "monthly": [
    {
     "month": "2026-01-01",
@@ -1678,8 +1678,8 @@
    },
    {
     "month": "2026-11-01",
-    "volume_usd": 113687.22479100002,
-    "deposits": 271
+    "volume_usd": 114237.22679100002,
+    "deposits": 275
    }
   ]
  },
