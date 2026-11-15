@@ -10,9 +10,9 @@
   "solana": "2026-11-15"
  },
  "totals": {
-  "volume_usd": 32481149.061961915,
-  "deposits": 93535,
-  "senders": 24138
+  "volume_usd": 32483280.626681916,
+  "deposits": 93539,
+  "senders": 24139
  },
  "by_address": [
   {
@@ -28,8 +28,8 @@
    "address": "3MZVk97x9SeRxbYpc3jhzRfU2fyA3emYutnqfn9kNfYX",
    "chain": "solana",
    "flow": "Account balance (Solana) + agent sweeps",
-   "volume_usd": 5220438.022175972,
-   "deposits": 12908,
+   "volume_usd": 5221069.5868959725,
+   "deposits": 12910,
    "first": "2024-01-06",
    "last": "2026-11-15"
   },
@@ -37,8 +37,8 @@
    "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
    "chain": "ethereum",
    "flow": "Account balance (ETH + BNB)",
-   "volume_usd": 5029362.877200128,
-   "deposits": 13124,
+   "volume_usd": 5030362.877200128,
+   "deposits": 13125,
    "first": "2023-11-17",
    "last": "2026-11-15"
   },
@@ -82,8 +82,8 @@
    "address": "0x76630b66b0cf7858186dc7031ad1e7e29a13168c",
    "chain": "arbitrum",
    "flow": "Account balance (Arbitrum) + BTC swap treasury",
-   "volume_usd": 711204.1838461014,
-   "deposits": 2266,
+   "volume_usd": 711704.1838461014,
+   "deposits": 2267,
    "first": "2023-12-06",
    "last": "2026-11-15"
   },
@@ -1583,7 +1583,7 @@
   {
    "month": "2026-11-01",
    "chain": "arbitrum",
-   "volume_usd": 44498.02886299999
+   "volume_usd": 44998.02886299999
   },
   {
    "month": "2026-11-01",
@@ -1598,7 +1598,7 @@
   {
    "month": "2026-11-01",
    "chain": "ethereum",
-   "volume_usd": 147859.7969784601
+   "volume_usd": 148859.7969784601
   },
   {
    "month": "2026-11-01",
@@ -1613,17 +1613,17 @@
   {
    "month": "2026-11-01",
    "chain": "solana",
-   "volume_usd": 364925.92554400006
+   "volume_usd": 365557.490264
   }
  ],
- "volume_since_2024": 30972975.47204561,
- "volume_30d": 1084058.0781846116,
+ "volume_since_2024": 30975107.036765613,
+ "volume_30d": 1083997.0393116116,
  "solana_sweeps": {
-  "volume_usd": 1498059.076316,
-  "deposits": 4070,
-  "addresses": 1126,
-  "volume_30d": 238758.528824,
-  "deposits_30d": 670,
+  "volume_usd": 1498690.641036,
+  "deposits": 4072,
+  "addresses": 1127,
+  "volume_30d": 237222.489951,
+  "deposits_30d": 668,
   "addresses_30d": 283,
   "monthly": [
    {
@@ -1678,8 +1678,8 @@
    },
    {
     "month": "2026-11-01",
-    "volume_usd": 124305.02699800002,
-    "deposits": 309
+    "volume_usd": 124936.59171800003,
+    "deposits": 311
    }
   ]
  },
