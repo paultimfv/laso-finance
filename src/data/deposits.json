@@ -10,17 +10,17 @@
   "solana": "2026-11-20"
  },
  "totals": {
-  "volume_usd": 32671437.691701915,
-  "deposits": 93764,
-  "senders": 24178
+  "volume_usd": 32705287.345807914,
+  "deposits": 93778,
+  "senders": 24179
  },
  "by_address": [
   {
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "ethereum",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 8261072.171769723,
-   "deposits": 20188,
+   "volume_usd": 8261312.094104724,
+   "deposits": 20191,
    "first": "2022-08-05",
    "last": "2026-11-20"
   },
@@ -28,8 +28,8 @@
    "address": "3MZVk97x9SeRxbYpc3jhzRfU2fyA3emYutnqfn9kNfYX",
    "chain": "solana",
    "flow": "Account balance (Solana) + agent sweeps",
-   "volume_usd": 5296920.109710972,
-   "deposits": 13012,
+   "volume_usd": 5304145.369615971,
+   "deposits": 13017,
    "first": "2024-01-06",
    "last": "2026-11-20"
   },
@@ -46,17 +46,17 @@
    "address": "8P9JiLTZSUZEhaBNPabrqVjKC9brZ87FJhhxNdVNabSq",
    "chain": "solana",
    "flow": "USA reloadable (Solana)",
-   "volume_usd": 4946583.331885977,
-   "deposits": 8265,
+   "volume_usd": 4971547.261590976,
+   "deposits": 8269,
    "first": "2024-02-03",
-   "last": "2026-11-19"
+   "last": "2026-11-20"
   },
   {
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "polygon",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 2151607.3767038323,
-   "deposits": 8583,
+   "volume_usd": 2152241.0367038324,
+   "deposits": 8584,
    "first": "2023-05-13",
    "last": "2026-11-20"
   },
@@ -64,8 +64,8 @@
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "arbitrum",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 1246679.8862240799,
-   "deposits": 4903,
+   "volume_usd": 1247466.76838508,
+   "deposits": 4904,
    "first": "2023-05-19",
    "last": "2026-11-20"
   },
@@ -1583,7 +1583,7 @@
   {
    "month": "2026-11-01",
    "chain": "arbitrum",
-   "volume_usd": 58234.863351
+   "volume_usd": 59021.745512
   },
   {
    "month": "2026-11-01",
@@ -1598,7 +1598,7 @@
   {
    "month": "2026-11-01",
    "chain": "ethereum",
-   "volume_usd": 185195.0640244601
+   "volume_usd": 185434.98635946008
   },
   {
    "month": "2026-11-01",
@@ -1608,23 +1608,23 @@
   {
    "month": "2026-11-01",
    "chain": "polygon",
-   "volume_usd": 5918.389999999999
+   "volume_usd": 6552.049999999999
   },
   {
    "month": "2026-11-01",
    "chain": "solana",
-   "volume_usd": 492967.1137500001
+   "volume_usd": 525156.30336
   }
  ],
- "volume_since_2024": 31163264.10178561,
- "volume_30d": 1111360.2866346114,
+ "volume_since_2024": 31197113.755891614,
+ "volume_30d": 1111492.9851486115,
  "solana_sweeps": {
-  "volume_usd": 1542440.620116,
-  "deposits": 4154,
+  "volume_usd": 1552229.279726,
+  "deposits": 4160,
   "addresses": 1142,
-  "volume_30d": 241484.929995,
-  "deposits_30d": 610,
-  "addresses_30d": 271,
+  "volume_30d": 250077.571348,
+  "deposits_30d": 611,
+  "addresses_30d": 270,
   "monthly": [
    {
     "month": "2026-01-01",
@@ -1678,8 +1678,8 @@
    },
    {
     "month": "2026-11-01",
-    "volume_usd": 168686.5707980001,
-    "deposits": 393
+    "volume_usd": 178475.2304080001,
+    "deposits": 399
    }
   ]
  },
@@ -1687,8 +1687,8 @@
   {
    "sender": "9sZEFeQDPyjjFjZM9jK6i6L5eWMCrTHB7pCWjU1k9WXR",
    "chain": "solana",
-   "volume_usd": 873970.9172090001,
-   "deposits": 161
+   "volume_usd": 880323.4472090001,
+   "deposits": 163
   },
   {
    "sender": "3CF7wbYG2Drvz8bQMzrvSzxoLVPjuP2pkpxuhmcE7Xum",
@@ -1705,14 +1705,14 @@
   {
    "sender": "0x110077460258d8c409ee9c4c6f01b2229f9bc7d7",
    "chain": "ethereum",
-   "volume_usd": 363069.5399999999,
-   "deposits": 316
+   "volume_usd": 363259.6499999999,
+   "deposits": 318
   },
   {
    "sender": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
    "chain": "ethereum",
-   "volume_usd": 346235.35851197323,
-   "deposits": 182
+   "volume_usd": 346285.17084697325,
+   "deposits": 183
   },
   {
    "sender": "DPqsobysNf5iA9w7zrQM8HLzCKZEDMkZsWbiidsAt1xo",
@@ -1759,8 +1759,8 @@
   {
    "sender": "GJRs4FwHtemZ5ZE9x3FNvJ8TMwitKTh21yxdRPqn7npE",
    "chain": "solana",
-   "volume_usd": 162736.11,
-   "deposits": 17
+   "volume_usd": 178784.11,
+   "deposits": 18
   },
   {
    "sender": "FpwQQhQQoEaVu3WU2qZMfF1hx48YyfwsLoRgXG83E99Q",
