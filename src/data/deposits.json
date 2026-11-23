@@ -10,17 +10,17 @@
   "solana": "2026-11-23"
  },
  "totals": {
-  "volume_usd": 32770384.55319818,
-  "deposits": 93908,
-  "senders": 24197
+  "volume_usd": 32776209.149952184,
+  "deposits": 93928,
+  "senders": 24203
  },
  "by_address": [
   {
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "ethereum",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 8271861.190337723,
-   "deposits": 20213,
+   "volume_usd": 8272479.010337723,
+   "deposits": 20215,
    "first": "2022-08-05",
    "last": "2026-11-23"
   },
@@ -28,8 +28,8 @@
    "address": "3MZVk97x9SeRxbYpc3jhzRfU2fyA3emYutnqfn9kNfYX",
    "chain": "solana",
    "flow": "Account balance (Solana) + agent sweeps",
-   "volume_usd": 5337714.140812972,
-   "deposits": 13074,
+   "volume_usd": 5340873.892153972,
+   "deposits": 13087,
    "first": "2024-01-06",
    "last": "2026-11-23"
   },
@@ -64,8 +64,8 @@
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "arbitrum",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 1251505.55359208,
-   "deposits": 4907,
+   "volume_usd": 1252253.55359208,
+   "deposits": 4908,
    "first": "2023-05-19",
    "last": "2026-11-23"
   },
@@ -82,8 +82,8 @@
    "address": "0x76630b66b0cf7858186dc7031ad1e7e29a13168c",
    "chain": "arbitrum",
    "flow": "Account balance (Arbitrum) + BTC swap treasury",
-   "volume_usd": 715640.3499451017,
-   "deposits": 2284,
+   "volume_usd": 715729.8853581017,
+   "deposits": 2286,
    "first": "2023-12-06",
    "last": "2026-11-23"
   },
@@ -109,10 +109,10 @@
    "address": "0x8cbc98d51a8fcd83fe366acf96c55ad22e8bb95c",
    "chain": "polygon",
    "flow": "Account balance (Polygon)",
-   "volume_usd": 567875.0108705562,
-   "deposits": 2596,
+   "volume_usd": 568875.0108705562,
+   "deposits": 2597,
    "first": "2023-11-28",
-   "last": "2026-11-21"
+   "last": "2026-11-23"
   },
   {
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
@@ -154,8 +154,8 @@
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "bnb",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 192763.94130896695,
-   "deposits": 821,
+   "volume_usd": 192973.43130896694,
+   "deposits": 822,
    "first": "2023-07-12",
    "last": "2026-11-23"
   },
@@ -1583,7 +1583,7 @@
   {
    "month": "2026-11-01",
    "chain": "arbitrum",
-   "volume_usd": 65030.55133600001
+   "volume_usd": 65868.08674900001
   },
   {
    "month": "2026-11-01",
@@ -1593,12 +1593,12 @@
   {
    "month": "2026-11-01",
    "chain": "bnb",
-   "volume_usd": 30187.718905268226
+   "volume_usd": 30397.208905268228
   },
   {
    "month": "2026-11-01",
    "chain": "ethereum",
-   "volume_usd": 198853.93259246007
+   "volume_usd": 199471.75259246008
   },
   {
    "month": "2026-11-01",
@@ -1608,22 +1608,22 @@
   {
    "month": "2026-11-01",
    "chain": "polygon",
-   "volume_usd": 7669.049999999999
+   "volume_usd": 8669.05
   },
   {
    "month": "2026-11-01",
    "chain": "solana",
-   "volume_usd": 562484.7357
+   "volume_usd": 565644.487041
   }
  ],
- "volume_since_2024": 31262210.96328188,
- "volume_30d": 1100024.1702114036,
+ "volume_since_2024": 31268035.56003588,
+ "volume_30d": 1096678.4752074038,
  "solana_sweeps": {
-  "volume_usd": 1573420.502066,
-  "deposits": 4213,
-  "addresses": 1151,
-  "volume_30d": 256938.850717,
-  "deposits_30d": 597,
+  "volume_usd": 1576570.253407,
+  "deposits": 4225,
+  "addresses": 1156,
+  "volume_30d": 255513.16353,
+  "deposits_30d": 598,
   "addresses_30d": 264,
   "monthly": [
    {
@@ -1678,8 +1678,8 @@
    },
    {
     "month": "2026-11-01",
-    "volume_usd": 199666.45274800016,
-    "deposits": 452
+    "volume_usd": 202816.20408900012,
+    "deposits": 464
    }
   ]
  },
@@ -1705,8 +1705,8 @@
   {
    "sender": "0x110077460258d8c409ee9c4c6f01b2229f9bc7d7",
    "chain": "ethereum",
-   "volume_usd": 372605.8399999999,
-   "deposits": 338
+   "volume_usd": 373223.6599999999,
+   "deposits": 340
   },
   {
    "sender": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
