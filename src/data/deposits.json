@@ -1,35 +1,35 @@
 {
  "built_at": "2026-11-25",
  "coverage": {
-  "ethereum": "2026-11-24",
-  "arbitrum": "2026-11-24",
+  "ethereum": "2026-11-25",
+  "arbitrum": "2026-11-25",
   "optimism": "2026-11-24",
-  "base": "2026-11-24",
-  "polygon": "2026-11-24",
-  "bnb": "2026-11-24",
+  "base": "2026-11-25",
+  "polygon": "2026-11-25",
+  "bnb": "2026-11-25",
   "solana": "2026-11-25"
  },
  "totals": {
-  "volume_usd": 32799509.19494818,
-  "deposits": 93977,
-  "senders": 24211
+  "volume_usd": 32838295.404063184,
+  "deposits": 93999,
+  "senders": 24214
  },
  "by_address": [
   {
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "ethereum",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 8277262.316017724,
-   "deposits": 20221,
+   "volume_usd": 8282094.254069724,
+   "deposits": 20225,
    "first": "2022-08-05",
-   "last": "2026-11-24"
+   "last": "2026-11-25"
   },
   {
    "address": "3MZVk97x9SeRxbYpc3jhzRfU2fyA3emYutnqfn9kNfYX",
    "chain": "solana",
    "flow": "Account balance (Solana) + agent sweeps",
-   "volume_usd": 5354679.930169972,
-   "deposits": 13113,
+   "volume_usd": 5367470.697109972,
+   "deposits": 13120,
    "first": "2024-01-06",
    "last": "2026-11-25"
   },
@@ -46,10 +46,10 @@
    "address": "8P9JiLTZSUZEhaBNPabrqVjKC9brZ87FJhhxNdVNabSq",
    "chain": "solana",
    "flow": "USA reloadable (Solana)",
-   "volume_usd": 4975629.282733977,
-   "deposits": 8273,
+   "volume_usd": 4990133.030471977,
+   "deposits": 8277,
    "first": "2024-02-03",
-   "last": "2026-11-24"
+   "last": "2026-11-25"
   },
   {
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
@@ -64,10 +64,10 @@
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "arbitrum",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 1254404.20816808,
-   "deposits": 4911,
+   "volume_usd": 1257949.43944308,
+   "deposits": 4914,
    "first": "2023-05-19",
-   "last": "2026-11-24"
+   "last": "2026-11-25"
   },
   {
    "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
@@ -82,10 +82,10 @@
    "address": "0x76630b66b0cf7858186dc7031ad1e7e29a13168c",
    "chain": "arbitrum",
    "flow": "Account balance (Arbitrum) + BTC swap treasury",
-   "volume_usd": 716026.0620821018,
-   "deposits": 2291,
+   "volume_usd": 716037.6271921018,
+   "deposits": 2292,
    "first": "2023-12-06",
-   "last": "2026-11-24"
+   "last": "2026-11-25"
   },
   {
    "address": "Cdhj6FBJjaAbQZXP4RDaq7hCBZdcbundLtq1QiH4H9zc",
@@ -109,19 +109,19 @@
    "address": "0x8cbc98d51a8fcd83fe366acf96c55ad22e8bb95c",
    "chain": "polygon",
    "flow": "Account balance (Polygon)",
-   "volume_usd": 568875.0108705562,
-   "deposits": 2597,
+   "volume_usd": 569875.0108705562,
+   "deposits": 2598,
    "first": "2023-11-28",
-   "last": "2026-11-23"
+   "last": "2026-11-25"
   },
   {
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "base",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 489063.5543870106,
-   "deposits": 2173,
+   "volume_usd": 489211.77438701055,
+   "deposits": 2174,
    "first": "2024-03-22",
-   "last": "2026-11-24"
+   "last": "2026-11-25"
   },
   {
    "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
@@ -154,10 +154,10 @@
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "bnb",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 194248.43130896694,
-   "deposits": 825,
+   "volume_usd": 196203.17130896694,
+   "deposits": 826,
    "first": "2023-07-12",
-   "last": "2026-11-24"
+   "last": "2026-11-25"
   },
   {
    "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
@@ -1583,22 +1583,22 @@
   {
    "month": "2026-11-01",
    "chain": "arbitrum",
-   "volume_usd": 68314.91804900001
+   "volume_usd": 71871.71443400001
   },
   {
    "month": "2026-11-01",
    "chain": "base",
-   "volume_usd": 18356.769051
+   "volume_usd": 18504.989051
   },
   {
    "month": "2026-11-01",
    "chain": "bnb",
-   "volume_usd": 31672.208905268228
+   "volume_usd": 33626.948905268226
   },
   {
    "month": "2026-11-01",
    "chain": "ethereum",
-   "volume_usd": 204492.73827246006
+   "volume_usd": 209324.67632446004
   },
   {
    "month": "2026-11-01",
@@ -1608,23 +1608,23 @@
   {
    "month": "2026-11-01",
    "chain": "polygon",
-   "volume_usd": 8692.05
+   "volume_usd": 9692.05
   },
   {
    "month": "2026-11-01",
    "chain": "solana",
-   "volume_usd": 579772.8850570001
+   "volume_usd": 607067.3997350002
   }
  ],
- "volume_since_2024": 31291335.60503188,
- "volume_30d": 1092022.0307074038,
+ "volume_since_2024": 31330121.81414688,
+ "volume_30d": 1121248.4441654037,
  "solana_sweeps": {
-  "volume_usd": 1590376.291423,
-  "deposits": 4251,
-  "addresses": 1162,
-  "volume_30d": 259443.688165,
-  "deposits_30d": 605,
-  "addresses_30d": 263,
+  "volume_usd": 1593628.54996,
+  "deposits": 4259,
+  "addresses": 1163,
+  "volume_30d": 262694.269659,
+  "deposits_30d": 612,
+  "addresses_30d": 265,
   "monthly": [
    {
     "month": "2026-01-01",
@@ -1678,8 +1678,8 @@
    },
    {
     "month": "2026-11-01",
-    "volume_usd": 216622.24210500007,
-    "deposits": 490
+    "volume_usd": 219874.50064200012,
+    "deposits": 498
    }
   ]
  },
@@ -1687,8 +1687,8 @@
   {
    "sender": "9sZEFeQDPyjjFjZM9jK6i6L5eWMCrTHB7pCWjU1k9WXR",
    "chain": "solana",
-   "volume_usd": 895916.4472090001,
-   "deposits": 165
+   "volume_usd": 907112.4472090001,
+   "deposits": 166
   },
   {
    "sender": "3CF7wbYG2Drvz8bQMzrvSzxoLVPjuP2pkpxuhmcE7Xum",
@@ -1705,14 +1705,14 @@
   {
    "sender": "0x110077460258d8c409ee9c4c6f01b2229f9bc7d7",
    "chain": "ethereum",
-   "volume_usd": 377957.16,
-   "deposits": 345
+   "volume_usd": 382739.26999999996,
+   "deposits": 348
   },
   {
    "sender": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
    "chain": "ethereum",
-   "volume_usd": 346384.7994579732,
-   "deposits": 185
+   "volume_usd": 346434.62750997324,
+   "deposits": 186
   },
   {
    "sender": "DPqsobysNf5iA9w7zrQM8HLzCKZEDMkZsWbiidsAt1xo",
