@@ -1,46 +1,46 @@
 {
- "built_at": "2026-11-25",
+ "built_at": "2026-11-26",
  "coverage": {
-  "ethereum": "2026-11-25",
+  "ethereum": "2026-11-26",
   "arbitrum": "2026-11-25",
   "optimism": "2026-11-24",
-  "base": "2026-11-25",
+  "base": "2026-11-26",
   "polygon": "2026-11-25",
-  "bnb": "2026-11-25",
-  "solana": "2026-11-25"
+  "bnb": "2026-11-26",
+  "solana": "2026-11-26"
  },
  "totals": {
-  "volume_usd": 32847660.210848182,
-  "deposits": 94021,
-  "senders": 24217
+  "volume_usd": 32857766.18757418,
+  "deposits": 94040,
+  "senders": 24221
  },
  "by_address": [
   {
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "ethereum",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 8285476.724069724,
-   "deposits": 20227,
+   "volume_usd": 8288332.894069724,
+   "deposits": 20230,
    "first": "2022-08-05",
-   "last": "2026-11-25"
+   "last": "2026-11-26"
   },
   {
    "address": "3MZVk97x9SeRxbYpc3jhzRfU2fyA3emYutnqfn9kNfYX",
    "chain": "solana",
    "flow": "Account balance (Solana) + agent sweeps",
-   "volume_usd": 5372163.471230972,
-   "deposits": 13132,
+   "volume_usd": 5378269.370844972,
+   "deposits": 13142,
    "first": "2024-01-06",
-   "last": "2026-11-25"
+   "last": "2026-11-26"
   },
   {
    "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
    "chain": "ethereum",
    "flow": "Account balance (ETH + BNB)",
-   "volume_usd": 5037884.1272001285,
-   "deposits": 13155,
+   "volume_usd": 5038273.637200128,
+   "deposits": 13157,
    "first": "2023-11-17",
-   "last": "2026-11-25"
+   "last": "2026-11-26"
   },
   {
    "address": "8P9JiLTZSUZEhaBNPabrqVjKC9brZ87FJhhxNdVNabSq",
@@ -82,8 +82,8 @@
    "address": "0x76630b66b0cf7858186dc7031ad1e7e29a13168c",
    "chain": "arbitrum",
    "flow": "Account balance (Arbitrum) + BTC swap treasury",
-   "volume_usd": 716153.6898561018,
-   "deposits": 2293,
+   "volume_usd": 716343.6569681017,
+   "deposits": 2294,
    "first": "2023-12-06",
    "last": "2026-11-25"
   },
@@ -118,10 +118,10 @@
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "base",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 489446.77438701055,
-   "deposits": 2176,
+   "volume_usd": 489555.6743870106,
+   "deposits": 2178,
    "first": "2024-03-22",
-   "last": "2026-11-25"
+   "last": "2026-11-26"
   },
   {
    "address": "0xf0e0d6c3538e3cc109730c9decae25c41ebdbbd0",
@@ -154,10 +154,10 @@
    "address": "0x3291e96b3bff7ed56e3ca8364273c5b4654b2b37",
    "chain": "bnb",
    "flow": "Main EVM deposit (reloadable + account balance)",
-   "volume_usd": 196696.67130896694,
-   "deposits": 827,
+   "volume_usd": 197152.20130896693,
+   "deposits": 828,
    "first": "2023-07-12",
-   "last": "2026-11-25"
+   "last": "2026-11-26"
   },
   {
    "address": "0xa2adaa6adfce3987cfa04db4d876d9cf7fab00fd",
@@ -1583,22 +1583,22 @@
   {
    "month": "2026-11-01",
    "chain": "arbitrum",
-   "volume_usd": 72387.777098
+   "volume_usd": 72577.74421
   },
   {
    "month": "2026-11-01",
    "chain": "base",
-   "volume_usd": 18739.989051
+   "volume_usd": 18848.889051000002
   },
   {
    "month": "2026-11-01",
    "chain": "bnb",
-   "volume_usd": 34120.448905268226
+   "volume_usd": 34575.978905268224
   },
   {
    "month": "2026-11-01",
    "chain": "ethereum",
-   "volume_usd": 212726.14632446005
+   "volume_usd": 215971.82632446004
   },
   {
    "month": "2026-11-01",
@@ -1613,18 +1613,18 @@
   {
    "month": "2026-11-01",
    "chain": "solana",
-   "volume_usd": 611760.1738560002
+   "volume_usd": 617866.0734700003
   }
  ],
- "volume_since_2024": 31339486.620931882,
- "volume_30d": 1120321.5212594038,
+ "volume_since_2024": 31349592.59765788,
+ "volume_30d": 1120220.4981934037,
  "solana_sweeps": {
-  "volume_usd": 1598316.184081,
-  "deposits": 4270,
-  "addresses": 1164,
-  "volume_30d": 262208.031803,
-  "deposits_30d": 609,
-  "addresses_30d": 261,
+  "volume_usd": 1604372.083695,
+  "deposits": 4279,
+  "addresses": 1165,
+  "volume_30d": 264516.791625,
+  "deposits_30d": 613,
+  "addresses_30d": 263,
   "monthly": [
    {
     "month": "2026-01-01",
@@ -1678,8 +1678,8 @@
    },
    {
     "month": "2026-11-01",
-    "volume_usd": 224562.1347630001,
-    "deposits": 509
+    "volume_usd": 230618.03437700012,
+    "deposits": 518
    }
   ]
  },
@@ -1705,8 +1705,8 @@
   {
    "sender": "0x110077460258d8c409ee9c4c6f01b2229f9bc7d7",
    "chain": "ethereum",
-   "volume_usd": 386121.73999999993,
-   "deposits": 350
+   "volume_usd": 388977.9099999999,
+   "deposits": 353
   },
   {
    "sender": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
