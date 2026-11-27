@@ -9,8 +9,8 @@
   "avg_usd": 9.779641340254837
  },
  "x402_30d": {
-  "volume_usd": 3000.873,
-  "payments": 411,
+  "volume_usd": 2990.858,
+  "payments": 405,
   "payers": 63
  },
  "other_in_usd": 466788.055311,
@@ -237,8 +237,8 @@
   }
  ],
  "outflows": {
-  "volume_usd": 935230.306789,
-  "transfers": 1296
+  "volume_usd": 935260.306789,
+  "transfers": 1297
  },
  "top_destinations": [
   {
