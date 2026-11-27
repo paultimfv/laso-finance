@@ -9,11 +9,11 @@
   "avg_usd": 9.779641340254837
  },
  "x402_30d": {
-  "volume_usd": 2990.858,
-  "payments": 405,
+  "volume_usd": 2990.857,
+  "payments": 404,
   "payers": 63
  },
- "other_in_usd": 466788.055311,
+ "other_in_usd": 467313.205311,
  "monthly": [
   {
    "month": "2025-01-01",
@@ -150,7 +150,7 @@
   {
    "month": "2026-11-01",
    "x402_usd": 2718.742000000012,
-   "transfer_usd": 15190.914056999998,
+   "transfer_usd": 15716.064056999998,
    "x402_payments": 346
   }
  ],
@@ -237,14 +237,14 @@
   }
  ],
  "outflows": {
-  "volume_usd": 935260.306789,
-  "transfers": 1297
+  "volume_usd": 935854.976789,
+  "transfers": 1298
  },
  "top_destinations": [
   {
    "address": "0x05f81020bfb3e4c24d1721552be6fe6b45b1ed41",
-   "volume_usd": 571514.9141289999,
-   "transfers": 595
+   "volume_usd": 572109.584129,
+   "transfers": 596
   },
   {
    "address": "0x14956d67e85b124bf0abe9be157f32994ac87171",
